@@ -1305,19 +1305,18 @@ padding-bottom:30px;
  
 }
 
-#media .container .fourteen.columns p{
+#media .container .sixteen.columns p{
   border-bottom-style: dotted;
-  border-bottom-width: medium;
-  border-bottom-margin:auto;
+  border-bottom-width: thick;
   padding-bottom: 20px;
-  border-bottom-color:#93C8EC;
+  border-bottom-color:#BEDEF4;
   width: 90%;
-  padding-left: 5%;
-  padding-right:5%;
+  margin-left: auto;
+  margin-right: auto;
   color: #13496C;
 }
 
-#media .fourteen.columns {
+#media .sixteen.columns {
    background-color:#fff;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -1335,14 +1334,14 @@ padding-bottom:30px;
 
 }
 
-#media .container .fourteen.columns h2 strong {
+#media .container .sixteen.columns h2 strong {
   color: #13496C;
   margin-left: 5%;
   margin-right: 5%;
   line-height: .1em;
-  font-size: .85em;
+  font-size: 1em;
 }
-#media .container .fourteen.columns  h3 {
+#media .container .sixteen.columns  h3 {
   color: #13496C;
   font-size: 1.2em;
   font-family: Varela Round;
@@ -1350,7 +1349,7 @@ padding-bottom:30px;
   margin-right: 5%;
   
 }
-#media .container .fourteen.columns  h4{
+#media .container .sixteen.columns  h4{
   color: #13496C;
   font-family: Varela Round;
   margin-left: 5%;
@@ -1374,13 +1373,17 @@ padding-bottom:30px;
   width:20%;
 }
 
-#media .container .fourteen.columns .huffpo2 p{
+#media .container .sixteen.columns .huffpo2 p{
   border-bottom-style: hidden;
 }
 
 #media .hbr img {
   height:15%;
   width:15%;
+}
+
+#media nav {
+
 }
 /*#coaching_leader {
   
