@@ -292,9 +292,9 @@ body {
  
   font-color:#000000;
   height:100%;
-  padding-left: 370px;
-
- padding-top: 10px;
+  /*margin-left: 16.5%;*/
+  
+  padding-top: 1.041667%;
 }
 
 #top a{ 
@@ -328,7 +328,7 @@ body {
   border-bottom-width: 100px;*/
   text-align: right;
   padding-bottom: 0px;
-  margin-top:-21px;   
+  /*margin-top:-21px;*/   
 
 
 
@@ -342,14 +342,15 @@ body {
 box-shadow: 0 7px 2px -2px rgba(50, 50, 50, 0.5);
 
   }
+
+#header .head {
+  margin-right:95%; 
+}
 #header img {
 
-float: left;
-margin-top: 2.08333333%;
-padding-left:2.604167%;
-
-height: 120%;
-width: 120%;
+float:left;
+height: 30%;
+width: 30%;
 
 /*border-color: black;
 border-style: solid;
@@ -366,17 +367,17 @@ border-radius: 10px; /* future proofing
 #header .container {
   background: #fff;
   width: 100%;
-  
-  height: 80%;
+  height: 100%;
+
     }
 
 
 #header nav {
   text-align: right;
   
-  padding-left: 200px;
+  margin-left: 10%;
   width: 100%;
-  padding-top: 40px;
+  /*padding-top: 40px;
   
   /*margin-top: 1em; */
   
@@ -384,8 +385,8 @@ border-radius: 10px; /* future proofing
 
 #header nav ul li {
   display: inline-block;
-  padding-left: 0.0520833%;
-  
+  margin-left: 0.0520833%;
+  margin-top:5.20833%; 
 }
 
 #header nav ul li a {
@@ -454,7 +455,7 @@ border-radius: 10px; /* future proofing
   padding-top:5px;
   background-color: #BF4040;
   width:100%;
-  height:50px;
+  height:98px;
   
  }
 
@@ -921,8 +922,8 @@ padding-bottom:30px;
   height: 50%;
   width: 50%;
   float:right;
-  margin-right: 100px;
-  margin-top: 30px;
+  margin-right: 10.416667%;
+  margin-top: 3.125%;
 }
 
 #social iframe {
@@ -1103,11 +1104,11 @@ padding-bottom:30px;
 
   #programs {
   padding-top: 30px;
-
+  
   }
 
 
-  #process .fourteen.columns {
+  #process .sixteen.columns {
     background-color: #fff;
     border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -1116,7 +1117,7 @@ padding-bottom:30px;
   margin-bottom: 50px;
   }
 
-  #process .fourteen.columns.clearfix img {
+  #process .sixteen.columns.clearfix img {
     height:65%;
     width: 65%;
 
@@ -1134,7 +1135,7 @@ padding-bottom:30px;
   text-align:bottom;
   box-shadow:  0px 0 10px #000000;
   padding-top: 25px;
-  padding-bottom: 0px;
+  padding-bottom: 3.125%;
   background-color: #13496C;
   border: 2px solid #BF4040;
    border-top-right-radius: 10px;
@@ -1160,7 +1161,7 @@ padding-bottom:30px;
   text-align:bottom;
   box-shadow:  0px 0 10px #000000;
   padding-top: 25px;
-  padding-bottom: 0px;
+  padding-bottom: 3.125%;
   background-color: #13496C;
   border: 2px solid #BF4040;
    border-top-right-radius: 10px;
@@ -1170,15 +1171,25 @@ padding-bottom:30px;
   -webkit-border-top-left-radius: 10px;
   -moz-border-top-left-radius: 10px;
   text-align: center;
+  font-size: 4em;
  }
  #programs img {
+  height:80%;
+  width:80%;
+  /*border: 5px solid #BF4040;*/
+  display:block;
+  margin-right: auto;
+  margin-left: auto;
+   }
+#programs .stepback img{
   height:100%;
   width:100%;
-  /*border: 5px solid #BF4040;*/
-   }
+}
 
 #programs h2 {
-  text-align: center;
+  text-align: left;
+  font-size: 1.5em;
+  margin-left:5%;
 }
  #programs h2 strong{
   color: #13496C;
@@ -1192,13 +1203,15 @@ padding-bottom:30px;
   text-indent: 30px;
   text-align: left;
   color:#13496C;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #programs p strong {
   color: #13496C;
 }
 
-#programs #coaching_leadership .fourteen.columns  {
+#programs #coaching_leadership .sixteen.columns  {
    background-color:#fff;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -1208,7 +1221,7 @@ padding-bottom:30px;
 
 }
 
-#programs #youth_sports .fourteen.columns {
+#programs #youth_sports .sixteen.columns {
    background-color:#fff;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -1235,6 +1248,7 @@ padding-bottom:30px;
 
  #testimonial {
   color:#13496C;
+  padding-top: 3.125%;
  }
 
 #testimonial h1 {
@@ -1326,6 +1340,10 @@ padding-bottom:30px;
   color: #13496C;
 }
 
+#media .people {
+  padding-top: 10px;
+}
+
 #media img {
   display: block;
   margin-left: 5%;
@@ -1384,6 +1402,12 @@ padding-bottom:30px;
 
 #media nav {
 
+}
+
+ .vid {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*#coaching_leader {
   
