@@ -292,8 +292,8 @@ body {
  
   font-color:#000000;
   height:100%;
-  /*margin-left: 16.5%;*/
-  
+  margin-left: 16.5%;
+  margin-bottom: -1.66666%;
   padding-top: 1.041667%;
 }
 
@@ -349,9 +349,10 @@ box-shadow: 0 7px 2px -2px rgba(50, 50, 50, 0.5);
 #header img {
 
 float:left;
-height: 30%;
-width: 30%;
-
+height: 35%;
+width: 35%;
+/*margin-top: 1.7%;*/
+margin-left: 4.7%
 /*border-color: black;
 border-style: solid;
 border-width: 1px;*/
@@ -511,16 +512,14 @@ border-radius: 10px; /* future proofing
 #about_us {
   padding-top:30px;
   font-family:Varela Round;
-  padding-bottom: 20px;
+  /*padding-bottom: 20px;*/
   /*background-color:#3498db;*/
-  
-
   height:100%;
   
 }
 
 
-#about_us .fourteen.columns h1 {
+#about_us .sixteen.columns h1 {
   color: #fff;
   font-size: 2.0em;
   text-align: center;
@@ -552,19 +551,19 @@ border-radius: 10px; /* future proofing
 }
 
 #about_us .container .ten.columns {
-  height:460;
-  width:1000;
+  /*height:100%;
+  width:75%;*/
   -moz-border-top-left-radius: 10px;
   -webkit-border-top-left-radius: 10px;
   -khtml-border-top-left-radius: 10px;
   -moz-border-bottom-left-radius: 10px;
   -webkit-border-bottom-left-radius: 10px;
   -khtml-border-bottom-left-radius: 10px;
-  display: block;
+  /*display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;*/
   background-image: url("../assets/boys.png");
-  background-size:100% 100%;
+  /*background-size:100% 100%;*/
   background-repeat: no-repeat;
 } 
 
@@ -572,7 +571,7 @@ border-radius: 10px; /* future proofing
   font-size:1.8em;
   background-color: #BF4040;
   opacity:.9;
-  margin-bottom: 0px;
+ 
   text-align: center;
   -moz-border-bottom-left-radius: 10px;
   -webkit-border-bottom-left-radius: 10px;
@@ -593,11 +592,13 @@ border-radius: 10px; /* future proofing
  
 
 } */
-#about_us .container .four.columns {
+#about_us .container .six.columns {
   background-color:#13496C;
-  height:458px;
+  height:480px;
   width:300px;
-  margin-left:-1px;
+  padding-top: 50px;
+
+  margin-left:-11px;
   -moz-border-top-right-radius: 10px;
   -webkit-border-top-right-radius: 10px;
   -khtml-border-top-right-radius: 10px;
@@ -607,24 +608,24 @@ border-radius: 10px; /* future proofing
  
 }
   
-#about_us .container .four.columns h1 {
+#about_us .container .six.columns h1 {
   color:#fff;
   font-size: 1.8em;
   text-align:center;
 
 }
-  #about_us .container .four.columns p {
+  #about_us .container .six.columns p {
   color:#fff;
   font-size: 1.0em;
   text-align:left;
-  padding-left: 10px;
-  padding-right:10px;
+  margin-right: 5%;
+  margin-left:5%;
 }
 
 #about_us .move{
   padding-left: 40px;
 }
-  #about_us .container .four.columns a {
+  #about_us .container .six.columns a {
  text-transform:uppercase bold;
   text-decoration:none;
   text-align: right;
@@ -645,7 +646,7 @@ border-radius: 10px; /* future proofing
  } 
 
 
-#about_us .six.columns.alpha {
+/*#about_us .six.columns.alpha {
   padding-top: 30px;
   
 }
@@ -653,12 +654,10 @@ border-radius: 10px; /* future proofing
 #about_us .six.columns.omega {
   padding-top: 30px;
   
-}
+}*/
 
 
-#about_us {
- float:center;
-}
+
 
 #section2 {
   height:650px;
