@@ -36,15 +36,27 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 
-<script>
+<!--<script>
 $(document).ready(function(){
-  $(".ex .hide").click(function(){
+  $("button").click(function(){
     $(this).parents(".ex").hide(100);
   });
 });
+</script>-->
+<!--<script>
+$( "button" ).click(function() {
+  $( "#testimonial .container .fourteen.columns .ex" ).show();
+});
+</script>-->
+
+<script>
+$(document).ready(function(){
+ $(".hideshow  button").click(function(){
+  $(".message").toggle();
+  $(".hideshow button").hide(300);
+  });
+});
 </script>
-
-
 </head>
 
 
@@ -80,10 +92,10 @@ $(document).ready(function(){
       </div>
         <ul>
           
-          <li><a href="#section2">About Us</a></li>
-          <li><%= link_to 'Programs', page_path('programs')%></li>
+          <li><%= link_to 'Home', root_path('')%></li>
+          <li><%= link_to 'Our Team', page_path('our_team')%></li>
          
-          <li><%= link_to 'Media', page_path('media')%></li>
+          <li><%= link_to 'New & Media', page_path('media')%></li>
 
         </ul>
 
@@ -111,25 +123,27 @@ $(document).ready(function(){
          <p>We create opportunities for our participants to thrive outside of school to build confidence that they can carry through out life. Our participants come from backgrounds where many of their peers are dropping out of school. Our programs engage High School students and allow them to enjoy learning through experience. These skills carry over into the classroom, helping the High School Students stay engaged and go onto graduate.</p>
          <img src="/assets/graphic.png">
         
-  
+          
           <h2><strong>Coaching Leadership Academy</strong></h2>
-          <p><strong>Coach Leadership Academy (CLA)</strong> is a coaching apprenticeship program in which high school students build self-confidence and develop leadership, teamwork, and other soft business skills by coaching elementary school students (3rd-5th graders).  Students participate in a 8-10 week program for two hours a day, four days a week, after school.</p>
-
+          <p><strong>Coach Leadership Academy (CLA)</strong> is a coaching apprenticeship program in which high school students build self-confidence and develop leadership, teamwork, and other soft business skills by coaching elementary school students (3rd-5th graders).  Students participate in a 8-10 week program for two hours a day, four days a week, after school.</p><div class="stepback"><img src="/assets/stepback.png"/></div>
 
           <p>One day each week, they are trained how to be effective coaches, building plans for their sessions with elementary school students.  Two days during the week they are on-site at the elementary school with a group of 45 elementary students (1:3 HS/ES student ratio) to teach them basketball-related games and drills.  The fourth day is reserved for academic support when the high school students do homework and receive support for their academic classes.</p>
-         <div class="stepback"><img src="/assets/stepback.png"/> </div>
+
+                 
+         
+        
+      
       <!--<div class="seven columns omega">-->
-      <!--<div id="youth_sports">
-        <div class="container">
-          <div class="fourteen columns">-->
+      
+       
       
        
         <h2><strong>Youth Sports Leadership Program</strong></h2>
         <p><strong>Youth Sports Leadership Program (YSLP)</strong> is an apprenticeship program that combines business with coaching as students learn to plan and implement a 3 on 3 basketball tournament at their own school.  The focus is on developing the leadership, teamwork, planning and responsibility required to plan and implement a successful event.  This program is particularly meaningful to students’ development because they are challenged to run a <em>small business</em>.</p> 
        
         <p>They must plan and implement an event, running the gamut from recruiting teams, securing space, creating and managing a budget, buying inventory for concessions, managing concessions, hiring referees and overseeing the event itself to ensure that it is both successful and profitable.  For most students, this experience is the first time their math skills become relevant to them and they are accountable for showing up, delivering on commitments and managing inevitable team disagreements.  This experience is fundamental in getting these youth to see the importance of work and the satisfaction of accomplishing their objectives.</p>
-        </div>
-      </div>
+     </div>
+    </div>
     </div>
     </div>
     </div>
@@ -176,10 +190,13 @@ understood that another year of failed classes would result in unforgiving conse
 made sure to do just enough to pass on to the next level.</p>
 
 <blockquote> <p>I want to work for Coaching4Change. I need to connect with people, and influence youth to make good choices and graduate.</p></blockquote>
-<div class="ex"><button class="hide">Read More</button>
 
 
-<p>In fall of 2013, his defeatist mentality lead him to a series of unpleasant discussions with his 
+
+<div class="hideshow"><button>Read More</button>
+
+<div class="message">
+  <p>In fall of 2013, his defeatist mentality lead him to a series of unpleasant discussions with his 
 
 mom, as he informed her that he didn’t care about graduating and intended on dropping out of 
 
@@ -232,7 +249,44 @@ programming, so that he can be a volunteer mentor and work his way up to staff.<
 Stonehill College in front of all the SERVT programs. The topic of his graduation speech is 
 
 “How C4C Changed My Life”.</p>
+
 </div>
+    </div>
+  </div>
+</div>
+
+<div id="partners">
+  <div class="container">
+    <div class="tweleve columns offset-by-two">
+      <h1>Our Partners</h1>
+        
+        <div class="one-sixth column">
+         <img src="/assets/bu.gif"/>
+        </div>
+
+        <div class="one-sixth column">
+          <img src="/assets/stonehill_logo.jpg"/>
+      
+        </div>
+
+        <div class="one-sixth column">
+          <img src="/assets/servt.png"/>
+        </div>
+   
+        <div class="one-sixth column">
+          <img src="/assets/bhs.jpg"/>
+        </div>
+
+      <div class="one-sixth column">
+      
+          <img src="/assets/arnone.jpg">
+      
+      </div>
+      <div class="one-sixth column">
+       <img src="/assets/fresh_city.png"></div>
+      </div>
+    </br>
+       <div class="but"> <a href="#"><strong>MORE SPONSORS</strong></a></div>
     </div>
   </div>
 </div>

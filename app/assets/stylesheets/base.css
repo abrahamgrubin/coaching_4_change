@@ -418,23 +418,29 @@ border-radius: 10px; /* future proofing
  }
 
 
- /*#header nav ul li a.btn {
+ #header nav ul li a:hover {
    
-   border-top: 1px solid #00bfbf;
-   background: #00bfbf;
-   background: -webkit-gradient(linear, left top, left bottom, from(#00bfbf), to(#00bfbf));
-   background: -webkit-linear-gradient(top, #00bfbf, #00bfbf);
-   background: -moz-linear-gradient(top, #00bfbf, #00bfbf);
-   background: -ms-linear-gradient(top, #00bfbf, #00bfbf);
-   background: -o-linear-gradient(top, #00bfbf, #00bfbf);
-   padding: 11px 22px;
+  text-transform:uppercase bold;
+  text-decoration:none;
+  text-align: right;
+   border-top: 1px solid #13496C;
+   background: #13496C;
+   background: -webkit-gradient(linear, left top, left bottom, from(#13496C), to(#13496C));
+   background: -webkit-linear-gradient(top, #13496C, #13496C);
+   background: -moz-linear-gradient(top, #13496C, #13496C);
+   background: -ms-linear-gradient(top, #13496C, #13496C);
+   background: -o-linear-gradient(top, #13496C, #13496C);
+   padding: 20px 40px;
    -webkit-border-radius: 12px;
    -moz-border-radius: 12px;
    border-radius: 12px;
-   
-   color: white;
+   /*box-shadow: 0 0 3px #000000;*/
+ 
+
+   color: #fff;
    font-size: 20px;
-   
+   height:15.208333%;
+   max-width: 10.416667%;
    text-decoration: none;
    vertical-align: middle;
    }
@@ -645,6 +651,25 @@ border-radius: 10px; /* future proofing
    font-size: 1.2em;
  } 
 
+  #about_us .container .six.columns a:hover {
+ text-transform:uppercase bold;
+  text-decoration:none;
+  text-align: right;
+   border-top: 1px solid #3498db;
+   background: #3498db;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3498db), to(#3498db));
+   background: -webkit-linear-gradient(top, #3498db, #3498db);
+   background: -moz-linear-gradient(top, #3498db, #3498db);
+   background: -ms-linear-gradient(top, #3498db, #3498db);
+   background: -o-linear-gradient(top, #3498db, #3498db);;
+   padding: 20px 40px;
+   -webkit-border-radius: 12px;
+   -moz-border-radius: 12px;
+   border-radius: 12px;
+   font-family: Varela Round;
+   color:#fff;
+   font-size: 1.2em;
+ } 
 
 /*#about_us .six.columns.alpha {
   padding-top: 30px;
@@ -1025,6 +1050,25 @@ padding-bottom:30px;
 
 }
 
+#partners {
+  background-image: url("../assets/group.png");
+ background-repeat: no-repeat;
+ background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 0 20px #000000;
+ color:#fff;
+}
+
+#partners img {
+   height:100px;
+   width:100px;
+  
+   -webkit-border-radius: 12px;
+   -moz-border-radius: 12px;
+   border-radius: 12px;
+   box-shadow: 0 0 10px #000000;
+}
 /*#sponsors .container {
   / text-shadow: 0 0 2px #000000;
   background: -webkit-linear-gradient(#E01F2E, #BF4040); /* For Safari 5.1 to 6.0 */
@@ -1057,7 +1101,8 @@ padding-bottom:30px;
    box-shadow: 0 0 10px #000000;
 }
 
-
+/* Fresh city image: First I had to resize it to 98 width in photoshop and then set the size of
+on the img property*/
 #sponsors .fresh {
   height:100px;
    width:100px;
@@ -1256,9 +1301,18 @@ width:98px;
   margin-left: auto;
    }
 #programs .stepback img{
-  height:100%;
-  width:100%;
+  height:40%;
+  width:40%;
+  float:right;
+  padding-left: 0px;
+  margin-left: 20px;
+  /*margin-top: -50px;*/
+    -webkit-bottom-left-border-radius: 12px;
+   -moz-border-radius: 12px;
+   border-bottom-left-radius: 12px;
+   shape-outside: url(../assets/stepback.png);
 }
+
 
 #programs h2 {
   text-align: left;
@@ -1292,17 +1346,10 @@ width:98px;
   -moz-border-radius: 10px;
   box-shadow:  0px 0 10px #000000;
   margin-bottom: 50px;
-
+  color: #13496C;
 }
 
-#programs #youth_sports .sixteen.columns {
-   background-color:#fff;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  box-shadow:  0px 0 10px #000000;
-  margin-bottom: 20px
-}
+
 #testimonial .fourteen.columns img{
   float:left;
   width: 35%;
@@ -1353,7 +1400,47 @@ width:98px;
   display: inline;
 }
 
+#testimonial .container .fourteen.columns .message {
+  display:none;
+}
 
+#testimonial button {
+  text-decoration:none;
+  text-align: right;
+   border-top: 1px solid #13496C;
+   background: #13496C;
+   background: -webkit-gradient(linear, left top, left bottom, from(#13496C), to(#13496C));
+   background: -webkit-linear-gradient(top, #13496C, #13496C);
+   background: -moz-linear-gradient(top, #13496C, #13496C);
+   background: -ms-linear-gradient(top, #13496C, #13496C);
+   background: -o-linear-gradient(top, #13496C, #13496C);
+   padding: 20px 40px;
+   -webkit-border-radius: 12px;
+   -moz-border-radius: 12px;
+   border-radius: 12px;
+   font-family: Varela Round;
+   color:#fff;
+   font-size: 1em;
+}
+#testimonial button:hover {
+
+  text-decoration:none;
+  text-align: right;
+   border-top: 1px solid #13496C;
+   background: #13496C;
+   background: -webkit-gradient(linear, left top, left bottom, from(#BF4040), to(#BF4040));
+   background: -webkit-linear-gradient(top, #BF4040, #BF4040);
+   background: -moz-linear-gradient(top, #BF4040, #BF4040);
+   background: -ms-linear-gradient(top, #BF4040, #BF4040);
+   background: -o-linear-gradient(top, #BF4040, #BF4040);
+   padding: 20px 40px;
+   -webkit-border-radius: 12px;
+   -moz-border-radius: 12px;
+   border-radius: 12px;
+   font-family: Varela Round;
+   color:#fff;
+   font-size: 1em;
+}
 #coaching_leader {
   background-color:#3498db ;
   }
@@ -1478,10 +1565,19 @@ width:98px;
 
 }
 
- .vid {
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
+#media a {
+  text-decoration: none;
+
+}
+#media a:hover{
+  text-decoration: underline;
+  color:#BF4040;
+}
+  iframe {
+ display:block;
+ margin-left: auto;
+ margin-right: auto;
+ padding-bottom: 30px;
 }
 /*#coaching_leader {
   
