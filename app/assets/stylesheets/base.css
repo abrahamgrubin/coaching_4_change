@@ -328,6 +328,7 @@ body {
   border-bottom-width: 100px;*/
   text-align: right;
   padding-bottom: 0px;
+
   /*margin-top:-21px;*/   
 
 
@@ -1051,7 +1052,7 @@ padding-bottom:30px;
 }
 
 #partners {
-  background-image: url("../assets/group.png");
+  background-image: url("../assets/rain.png");
  background-repeat: no-repeat;
  background-size: cover;
   padding-top: 20px;
@@ -1060,14 +1061,46 @@ padding-bottom:30px;
  color:#fff;
 }
 
+#partners .part h1 {
+  color:#fff;
+}
 #partners img {
-   height:100px;
-   width:100px;
+   height:90px;
+   width:90px;
   
    -webkit-border-radius: 12px;
    -moz-border-radius: 12px;
    border-radius: 12px;
    box-shadow: 0 0 10px #000000;
+}
+
+#partners .but {
+  text-align:center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+#partners a{
+  text-transform:uppercase bold;
+  text-decoration:none;
+  text-align: right;
+   border-top: 1px solid #13496C;
+   background: #13496C;
+   background: -webkit-gradient(linear, left top, left bottom, from(#13496C), to(#13496C));
+   background: -webkit-linear-gradient(top, #13496C, #13496C);
+   background: -moz-linear-gradient(top, #13496C, #13496C);
+   background: -ms-linear-gradient(top, #13496C, #13496C);
+   background: -o-linear-gradient(top, #13496C, #13496C);
+   padding: 20px 40px;
+   -webkit-border-radius: 12px;
+   -moz-border-radius: 12px;
+   border-radius: 12px;
+   font-family: Varela Round;
+   color:#fff;
+}
+
+#partners a strong {
+  color: #fff;
 }
 /*#sponsors .container {
   / text-shadow: 0 0 2px #000000;
@@ -1173,6 +1206,26 @@ width:98px;
    border-radius: 12px;
    font-family: Varela Round;
    color:#fff;
+}
+
+#sponsors a:hover {
+
+  text-decoration:none;
+  text-align: right;
+   border-top: 1px solid #13496C;
+   background: #13496C;
+   background: -webkit-gradient(linear, left top, left bottom, from(#BF4040), to(#BF4040));
+   background: -webkit-linear-gradient(top, #BF4040, #BF4040);
+   background: -moz-linear-gradient(top, #BF4040, #BF4040);
+   background: -ms-linear-gradient(top, #BF4040, #BF4040);
+   background: -o-linear-gradient(top, #BF4040, #BF4040);
+   padding: 20px 40px;
+   -webkit-border-radius: 12px;
+   -moz-border-radius: 12px;
+   border-radius: 12px;
+   font-family: Varela Round;
+   color:#fff;
+   font-size: 1em;
 }
 
 #sponsors strong {
@@ -1441,6 +1494,26 @@ width:98px;
    color:#fff;
    font-size: 1em;
 }
+
+#partners a:hover {
+
+  text-decoration:none;
+  text-align: right;
+   border-top: 1px solid #13496C;
+   background: #13496C;
+   background: -webkit-gradient(linear, left top, left bottom, from(#BF4040), to(#BF4040));
+   background: -webkit-linear-gradient(top, #BF4040, #BF4040);
+   background: -moz-linear-gradient(top, #BF4040, #BF4040);
+   background: -ms-linear-gradient(top, #BF4040, #BF4040);
+   background: -o-linear-gradient(top, #BF4040, #BF4040);
+   padding: 20px 40px;
+   -webkit-border-radius: 12px;
+   -moz-border-radius: 12px;
+   border-radius: 12px;
+   font-family: Varela Round;
+   color:#fff;
+   font-size: 1em;
+}
 #coaching_leader {
   background-color:#3498db ;
   }
@@ -1579,6 +1652,123 @@ width:98px;
  margin-right: auto;
  padding-bottom: 30px;
 }
+
+
+#our_team{
+  padding-top:25px;
+  background: -webkit-linear-gradient(#5092BE, #3498db); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#5092BE, #3498db); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#5092BE, #3498db); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#5092BE, #3498db);
+  color:#13496C;
+
+}
+
+#our_team h1 {
+  padding-top: 10px;
+  color:#fff;
+  text-align:bottom;
+  box-shadow:  0px 0 10px #000000;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  background-color: #13496C;
+  border: 2px solid #BF4040;
+   border-top-right-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+  text-align: center;
+  font-size: 4em;
+ 
+}
+
+#our_team .container .sixteen.columns p{
+  border-bottom-style: dotted;
+  border-bottom-width: thick;
+  padding-top:10px;
+  padding-bottom: 20px;
+  border-bottom-color:#BEDEF4;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #13496C;
+}
+
+#our_team .sixteen.columns {
+   background-color:#fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-shadow:  0px 0 10px #000000;
+  margin-bottom: 50px;
+  color: #13496C;
+}
+
+#our_team .container .sixteen.columns h2 {
+  color: #13496C;
+  margin-left: 5%;
+  margin-right: 5%;
+  line-height: .1em;
+  font-size: 2em;
+  padding-top: 10px;
+}
+#our_team .container .sixteen.columns  h3 {
+  color: #13496C;
+  font-size: 1.2em;
+  font-family: Varela Round;
+  margin-left: 5%;
+  margin-right: 5%;
+  
+}
+
+#our_team img {
+ 
+  width: 180px;
+  height: 180px;
+  /*border: 2px solid #BF4040;*/
+  border-radius: 200px;
+  
+  
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  box-shadow:  0px 0 10px #000000;
+  float:left;
+  shape-outside:circle();
+  margin: 15px;
+}
+
+#fres {
+  background-color: #fff;
+  height: 70px;
+  width: 70px;
+}
+
+#contact_us {
+  padding-top: 20px;
+}
+
+#contact_us h1 {
+  padding-top: 10px;
+  color:#fff;
+  text-align:bottom;
+  box-shadow:  0px 0 10px #000000;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  background-color: #13496C;
+  border: 2px solid #BF4040;
+   border-top-right-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+  text-align: center;
+  font-size: 4em;
+ 
+}
+
 /*#coaching_leader {
   
   background-image:url(../images/c4c-images/stepback.png);
