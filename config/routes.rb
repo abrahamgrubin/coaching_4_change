@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 # if routing the root path, update for your controller
 root to: 'pages#show', id: 'home'
 
-
+ resources :contacts 
  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
