@@ -601,7 +601,7 @@ border-radius: 10px; /* future proofing
 } */
 #about_us .container .six.columns {
   background-color:#13496C;
-  height:491px;
+  height:480px;
   width:300px;
   padding-top: 50px;
 
@@ -1640,7 +1640,7 @@ width:98px;
 
 #media a {
   text-decoration: none;
-
+  color: #13496C;
 }
 #media a:hover{
   text-decoration: underline;
