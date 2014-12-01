@@ -1,6 +1,6 @@
 class ContactMailer < ActionMailer::Base
-  default from: "no-reply@c4cinc.org"
-  reply_to: "pete@c4cinc.org"
+  default from: @user.email
+  reply_to: @user.email
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
   #
@@ -9,6 +9,6 @@ class ContactMailer < ActionMailer::Base
   def contact_confirmation(user)
     @user = user
 
-    mail to: user.email, subject: "Coaching 4 Change has recieved your inquiry" 
+    mail to: "abrahamgrubin@gmail.com", subject: :subject, message: :question
   end
 end

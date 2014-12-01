@@ -1,20 +1,24 @@
 class ContactsController < ApplicationController
 
 def show 
-  @user = User.find(params[:id])
+  @contact = Contact.find(params[:id])
 end
 
 def new 
-  @user = User.new
+  @contact = Contact.new
 end 
 
 def create 
-  @user = User.new(params[:user])
-  if @user.save 
-    redirect_to @user, notice: "You have contacted C4C successfully. You will recieve a confirmation email shortly."
+  @contact = Contact.new(contact_params)
+  if @contact.save 
+    ContactMailer.contact_confirmation(@contact).deliver
+    redirect_to @contact, notice: "You have contacted C4C successfully. You will recieve a confirmation email within 2 business days."
   else 
     render :new 
   end 
 end
-
+ private 
+  def contact_params
+   params.require(:contact).permit(:name, :email, :subject, :question) 
+  end 
 end

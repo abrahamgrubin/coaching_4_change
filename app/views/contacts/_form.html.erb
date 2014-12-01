@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="sixteen columns">
+    <%= form_for @user do |f| %>
+    <%=f.label :name %>
+    <%=f.text_field :name, placeholder: "Please Enter Your First and last name" %>
+    <%=f.label :address %>
+    <%=f.email_field :user, :address %>
+    <%= f.label :subject %>
+    <%= f.select(:subject, options_for_select([['My organization would like to partner with Coaching4Change'], ['My organization would like to sponsor Coaching4Change'], ['I am a high school student and would like to volunteer for one of the Coaching4Change programs'], ['I have a question about Coaching4Change programs'],['Other']]), {:prompt => 'Select a Subject'})%>
+    <%= f.label :question %>
+    <%= f.text_feild :question %> 
+    <%= f.submit, 'Submit Question' %>
+  <% end %>
+
+
+  </div>
+</div>

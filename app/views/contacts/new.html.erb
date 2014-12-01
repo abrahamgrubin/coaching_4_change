@@ -1,13 +1,3 @@
 <h1>Contact us</h1>
 
-<div class="container">
-  <div class="sixteen columns">
-    <%= form_for @user do |f| %>
-    <%=f.label :name %>
-    <%=f.text_field :name, placeholder: "Please Enter Your First and last name" %>
-    <%= f.label :question %>
-    <%= f.select(:question, options_for_select([['My organization would like to partner with Coaching4Change'], ['My organization would like to sponsor Coaching4Change'], ['I would like to volunteer for Coaching4Change']]))%>
-
-
-     </div>
-</div>
+<%= render partial: '_form' %>
