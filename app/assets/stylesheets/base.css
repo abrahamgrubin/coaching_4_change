@@ -1746,11 +1746,12 @@ width:98px;
 }
 
 #contact_us {
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 #contact_us h1 {
-  padding-top: 10px;
+  
+  margin-top:-5px;
   color:#fff;
   text-align:bottom;
   box-shadow:  0px 0 10px #000000;
@@ -1769,6 +1770,34 @@ width:98px;
  
 }
 
+#contact_us img {
+  height:30%;
+  width:30%;
+  float:right;
+}
+
+#contact_us .container .sixteen.columns {
+  color:#13496C;
+  background-color: white;
+}
+#contact_us .container h2 {
+  color:#13496C;
+}
+
+#contact_us strong {
+  color: #13496C;
+}
+
+#form {
+ background-color: #BF4040;
+ color:white;
+
+
+}
+
+#contact_us .container .sixteen.columns #form h2 {
+  color:white;
+}
 /*#coaching_leader {
   
   background-image:url(../images/c4c-images/stepback.png);
