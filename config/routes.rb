@@ -11,7 +11,7 @@ root to: 'pages#show', id: 'home'
 
  resources :contacts 
 
-
+ resources :charges
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
