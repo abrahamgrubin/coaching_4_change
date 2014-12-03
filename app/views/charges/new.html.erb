@@ -36,8 +36,8 @@
 
 
 <!-- Start WOWSlider.com HEAD section -->
-  <link rel="stylesheet" type="text/css" href="engine1//style.css" media="screen" />
-  <script type="text/javascript" src="engine1//jquery.js"></script>
+  <!--<link rel="stylesheet" type="text/css" href="engine1//style.css" media="screen" />-->
+  <!--<script type="text/javascript" src="engine1//jquery.js"></script>-->
 <!-- End WOWSlider.com HEAD section -->
 
 
@@ -50,19 +50,20 @@
 <script src="https://checkout.stripe.com/checkout.js"></script>
 <script>
   var handler = StripeCheckout.configure({
-    key: <%= Rails.configuration.stripe[:publishable_key] %>,
-    image: '/square-image.png',
+    key: '<%= Rails.configuration.stripe[:publishable_key] %>',
+    //image: '/square-image.png',
     token: function(token) {
-      $.post
+      $.post('<%= charges_path %>', {token: token, amount: 1000});
     }
   });
 
-  $('#customButton').on('click', function(e) {
+  $('.stripe-button-el').on('click', function(e) {
     // Open Checkout with further options
+    amount = $(this).attr('data-amount')
     handler.open({
-      name: 'Demo Site',
-      description: '2 widgets ($20.00)',
-      amount: 2000
+      name: 'c4cinc.org',
+      description: 'Support C4C ($'+amount+')',
+      amount: amount
     });
     e.preventDefault();
   });
@@ -128,10 +129,11 @@
           </label>
         </article>
 
-        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        <!--<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                 data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
                 data-description="Support C4C">
-        </script>
+        </script> -->
+        <button class="stripe-button-el" data-amount="2500">Pay Now</button>
   <!--handle selecting your own amount of money with paypal-->
   
         <% end %>
@@ -206,13 +208,14 @@
     </label>
   </article>
 
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+  <!--<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-description="Support C4C">
-  </script>
+  </script> -->
   <!--handle selecting your own amount of money with paypal-->
   
 <% end %>
+<button class="stripe-button-el" data-amount="2500">Pay Now</button>
 </div>
 <div class="four columns omega">
 <%= form_tag charges_path do %>
