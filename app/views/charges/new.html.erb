@@ -83,140 +83,141 @@
 <div class="container">
   <div class="sixteen columns clearfix">
     <h1>Support Us</h1>
-    <div class="four columns alpha">
+    <p>If you would like to donate to Coaching4Change please look at the different amounts and how they correlate to what it affords us to do. You can also donate $10 by texting <a href="sms:80088?body=GIVE 18248">GIVE 18248 to 80088</a>If you would like to become a corporate sponsor, please contact <a href="mailto:pete@c4cinc.org">pete@c4cinc.org</a>.   </p>
+    <div class="eight columns alpha">
       <%= form_tag charges_path do %>
           <article>
             <label class="amount">
               <h2>Student Uniform</h2>
+              <%= image_tag "tshirt.png" %>
               <h3><span>$</span>25</h3>
+
               <p>Provides one uniform for a high school student employee</p>
             </label>
           </article>
-          <button class="stripe-button-el" data-amount="2500">Pay Now</button>
+          <button class="stripe-button-el" data-amount="2500">Donate $25</button>
           <!--handle selecting your own amount of money with paypal-->
       <% end %>
     </div>
 
-    <div class="four columns omega">
+    <div class="eight columns omega">
       <%= form_tag charges_path do %>
           <article>
             <label class="amount">
               <h2>5 Jerseys</h2>
+              <%=image_tag "jersey.png"%>
               <h3><span>$</span>50</h3>
               <p>Provides jerseys for 5 elementary student-athletes</p>
             </label>
           </article>
-          <button class="stripe-button-el" data-amount="5000">Pay Now</button>
+          <button class="stripe-button-el" data-amount="5000">Donate $50</button>
           <!--handle selecting your own amount of money with paypal-->
 
       <% end %>
     </div>
-
-    <div class="four columns alpha">
+  </div>
+   <div class="sixteen columns clearfix">
+    <div class="eight columns alpha">
       <%= form_tag charges_path do %>
           <article>
             <label class="amount">
               <h2>Graduation Certificates</h2>
+              <%= image_tag "grad.png"%>
               <h3><span>$</span>100</h3>
               <p>Provides graduation certificates for all high school student employees</p>
             </label>
           </article>
 
-          <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                  data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-                  data-description="Support C4C">
-          </script>
+          <button class="stripe-button-el" data-amount="10000">Donate $100</button>
           <!--handle selecting your own amount of money with paypal-->
 
       <% end %>
     </div>
-    <div class="four columns omega">
+    <div class="eight columns omega">
       <%= form_tag charges_path do %>
           <article>
             <label class="amount">
               <h2>Student Salary</h2>
+              <%= image_tag "coach.png"%>
               <h3><span>$</span>200</h3>
               <p>Provides a salary for 1 high school student employee</p>
             </label>
           </article>
-
-          <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                  data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-                  data-description="Support C4C">
-          </script>
+          
+          <button class="stripe-button-el" data-amount="20000">Donate $200</button>
           <!--handle selecting your own amount of money with paypal-->
 
       <% end %>
     </div>
+  </div>
   <div class="sixteen columns clearfix">
-    <div class="four columns alpha">
+    <div class="eight columns alpha">
 <%= form_tag charges_path do %>
   <article>
     <label class="amount">
       <h2>Field Trip</h2>
+      <%= image_tag "bus.png" %>
       <h3><span>$</span>300</h3>
       <p>Provides one college field trip for cohort of 15 high school student employees</p>
       
     </label>
   </article>
-  <button class="stripe-button-el" data-amount="2500">Pay Now</button>
+  <button class="stripe-button-el" data-amount="30000">Donate $300</button>
   <!--handle selecting your own amount of money with paypal-->
   
 <% end %>
 </div>
-<div class="four columns omega">
+<div class="eight columns omega">
 <%= form_tag charges_path do %>
   <article>
     <label class="amount">
+
        <h2>Sports Equipment</h2>
+       <%=image_tag "bball.png" %>
        <h3><span>$</span>500</h3>
        <p>Provides sports equipment for program activities</p>
       
     </label>
   </article>
 
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="Support C4C">
-  </script>
+   <button class="stripe-button-el" data-amount="50000">Donate $500</button>
   <!--handle selecting your own amount of money with paypal-->
   
 <% end %>
+  </div>
 </div>
-<div class="four columns alpha">
+<div class="sixteen columns clearfix">
+<div class="eight columns alpha">
 <%= form_tag charges_path do %>
   <article>
     <label class="amount">
       <h2>Mentor Training</h2>
+      <%=image_tag "train.png"%>
       <h3><span>$</span>1,000</h3>
       <p>Provides training for all program mentors and teachers</p>
     </label>
   </article>
-
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="Support C4C">
-  </script>
+  
+  <button class="stripe-button-el" data-amount="100000">Donate $1,000</button>
+  
   <!--handle selecting your own amount of money with paypal-->
   <% end %>
 </div>
-<div class="four columns omega">
+<div class="eight columns omega">
   <%= form_tag charges_path do %>
   <article>
     <label class="amount">
       <h2>Instructor Salary</h2>
+      <%= image_tag "teacher.png"%>
       <h3><span>$</span>3,700</h3>
-      <p>provide a salary for the program instructor</p>
+      <p>Provides a salary for the program instructor</p>
     </label>
   </article>
-
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="Support C4C">
-  </script>
+<button class="stripe-button-el" data-amount="370000">Donate $3,700</button>
 
 
 <% end %>
+</div>
 </div>
 </div>
 </div>
@@ -240,6 +241,7 @@
 </br>
 </br>
    <p>&copy; 2014. Coaching4Change All Rights Reserved.</p>
+   
  </div>
 </div> 
 </div>
