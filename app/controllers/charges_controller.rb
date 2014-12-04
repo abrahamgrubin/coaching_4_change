@@ -4,11 +4,12 @@ class ChargesController < ApplicationController
 
   def create
   # Amount in cents
+    token = params[:token]
     @amount = params[:amount]
 
     customer = Stripe::Customer.create(
       :email => 'example@stripe.com',
-      :card  => params[:stripeToken],
+      :card  => token[:id],
     )
 
     charge = Stripe::Charge.create(
@@ -17,10 +18,9 @@ class ChargesController < ApplicationController
       :description => 'Donate to C4C',
       :currency    => 'usd'
     )
-  flash[:success] = "Thank you for supporting Coaching 4 Change!"
+    render json: {sucess: true, message: "Thank you for supporting Coaching 4 Change!"}
   rescue Stripe::CardError => e
-    flash[:error] = e.message
-    redirect_to charges_path
+    render json: {sucess: false, message: e.message}
   end
 
 
