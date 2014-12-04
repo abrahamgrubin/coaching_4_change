@@ -76,13 +76,11 @@
     <div class="sixteen columns">
       <nav>
       <div class="logo">
-        <img src="/assets/c4c-logo-print.png">
+        <%= link_to image_tag("c4c-logo-print.png"), root_path('')%>
       </div>
         <ul>
-          
-          <li><%= link_to 'Home', page_path('home')%></li>
           <li><%= link_to 'Programs', page_path('programs')%></li>
-         
+          <li><%= link_to 'Donate', page_path('home')%></li>
           <li><%= link_to 'Our Team', page_path('our_team')%></li>
 
         </ul>

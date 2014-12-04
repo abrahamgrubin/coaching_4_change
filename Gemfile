@@ -41,6 +41,9 @@ gem 'high_voltage', '~> 2.2.1'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 gem "figaro"
+
+gem 'mail_form'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
