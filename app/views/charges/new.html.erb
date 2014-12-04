@@ -45,38 +45,6 @@
 
 
 <body>
-  
-  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="https://checkout.stripe.com/checkout.js"></script>
-<script>
-  var handler = StripeCheckout.configure({
-    key: '<%= Rails.configuration.stripe[:publishable_key] %>',
-    //image: '/square-image.png',
-    token: function(token) {
-      $.post('<%= charges_path %>', {token: token, amount: 1000});
-    }
-  });
-
-  $('.stripe-button-el').on('click', function(e) {
-    // Open Checkout with further options
-    amount = $(this).attr('data-amount')
-    handler.open({
-      name: 'c4cinc.org',
-      description: 'Support C4C ($'+amount+')',
-      amount: amount
-    });
-    e.preventDefault();
-  });
-
-  // Close Checkout on page navigation
-  $(window).on('popstate', function() {
-    handler.close();
-  });
-</script>
-
-
-
-
   <!-- Primary Page Layout
   ================================================== -->
 
@@ -115,87 +83,86 @@
 
 <div id="cascade">
 <div id="donate">
-  <div class="container">
-    <div class="sixteen columns clearfix">
-      <h1>Support Us</h1>
-      <div class="four columns alpha">
-      <%= form_tag charges_path do %>
-        <article>
-          <label class="amount">
-            <h2>Student Uniform</h2>
-            <h3><span>$</span>25</h3>
-            <p>Provides one uniform for a high school student employee</p>
-            
-          </label>
-        </article>
 
-        <!--<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+<div class="container">
+  <div class="sixteen columns clearfix">
+    <h1>Support Us</h1>
+    <div class="four columns alpha">
+      <%= form_tag charges_path do %>
+          <article>
+            <label class="amount">
+              <h2>Student Uniform</h2>
+              <h3><span>$</span>25</h3>
+              <p>Provides one uniform for a high school student employee</p>
+
+            </label>
+          </article>
+
+          <!--<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                 data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
                 data-description="Support C4C">
         </script> -->
-        <button class="stripe-button-el" data-amount="2500">Pay Now</button>
-  <!--handle selecting your own amount of money with paypal-->
-  
-        <% end %>
+          <button class="stripe-button-el" data-amount="2500">Pay Now</button>
+          <!--handle selecting your own amount of money with paypal-->
+
+      <% end %>
     </div>
 
-<div class="four columns omega">    
-<%= form_tag charges_path do %>
-  <article>
-    <label class="amount">
-      <h2>5 Jerseys</h2>
-      <h3><span>$</span>50</h3>
-      <p>Provides jerseys for 5 elementary student-athletes</p>  
-    </label>
-  </article>
+    <div class="four columns omega">
+      <%= form_tag charges_path do %>
+          <article>
+            <label class="amount">
+              <h2>5 Jerseys</h2>
+              <h3><span>$</span>50</h3>
+              <p>Provides jerseys for 5 elementary student-athletes</p>
+            </label>
+          </article>
 
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="Support C4C">
-  </script>
-  <!--handle selecting your own amount of money with paypal-->
-  
-<% end %>
-</div>
+          <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                  data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                  data-description="Support C4C">
+          </script>
+          <!--handle selecting your own amount of money with paypal-->
 
-<div class="four columns alpha">  
-<%= form_tag charges_path do %>
-  <article>
-    <label class="amount">
-      <h2>Graduation Certificates</h2>
-      <h3><span>$</span>100</h3>
-      <p>Provides graduation certificates for all high school student employees</p>
-    </label>
-  </article>
+      <% end %>
+    </div>
 
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="Support C4C">
-  </script>
-  <!--handle selecting your own amount of money with paypal-->
-  
-<% end %>
-</div>
-<div class="four columns omega">  
-<%= form_tag charges_path do %>
-  <article>
-    <label class="amount">
-      <h2>Student Salary</h2>
-      <h3><span>$</span>200</h3>
-      <p>Provides a salary for 1 high school student employee</p>
-    </label>
-  </article>
+    <div class="four columns alpha">
+      <%= form_tag charges_path do %>
+          <article>
+            <label class="amount">
+              <h2>Graduation Certificates</h2>
+              <h3><span>$</span>100</h3>
+              <p>Provides graduation certificates for all high school student employees</p>
+            </label>
+          </article>
 
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="Support C4C">
-  </script>
-  <!--handle selecting your own amount of money with paypal-->
-  
-<% end %>
-</div>
-</div>
-<div class="container">
+          <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                  data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                  data-description="Support C4C">
+          </script>
+          <!--handle selecting your own amount of money with paypal-->
+
+      <% end %>
+    </div>
+    <div class="four columns omega">
+      <%= form_tag charges_path do %>
+          <article>
+            <label class="amount">
+              <h2>Student Salary</h2>
+              <h3><span>$</span>200</h3>
+              <p>Provides a salary for 1 high school student employee</p>
+            </label>
+          </article>
+
+          <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                  data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                  data-description="Support C4C">
+          </script>
+          <!--handle selecting your own amount of money with paypal-->
+
+      <% end %>
+    </div>
   <div class="sixteen columns clearfix">
     <div class="four columns alpha">
 <%= form_tag charges_path do %>
@@ -304,5 +271,32 @@
 
 <!-- End Document
 ================================================== -->
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://checkout.stripe.com/checkout.js"></script>
+  <script>
+      var handler = StripeCheckout.configure({
+          key: '<%= Rails.configuration.stripe[:publishable_key] %>',
+          //image: '/square-image.png',
+          token: function(token) {
+              $.post('<%= charges_path %>', {token: token, amount: 1000});
+          }
+      });
+
+      $('.stripe-button-el').on('click', function(e) {
+          // Open Checkout with further options
+          amount = $(this).attr('data-amount')
+          handler.open({
+              name: 'c4cinc.org',
+              description: 'Support C4C ($'+amount+')',
+              amount: amount
+          });
+          e.preventDefault();
+      });
+
+      // Close Checkout on page navigation
+      $(window).on('popstate', function() {
+          handler.close();
+      });
+  </script>
 </body>
 </html>
