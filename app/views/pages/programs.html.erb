@@ -90,15 +90,15 @@ $(document).ready(function(){
     <div class="sixteen columns">
       <nav>
       <div class="logo">
-        <img src="/assets/c4c-logo-print.png">
+        <%= link_to image_tag("c4c-logo-print.png"), root_path('')%>
       </div>
         <ul>
           
-          <li><%= link_to 'Home', root_path('')%></li>
-          <li><%= link_to 'Our Team', page_path('our_team')%></li>
+          
+          <li><strong><%= link_to 'Our Team', page_path('our_team')%></strong></li>
          
-          <li><%= link_to 'New & Media', page_path('media')%></li>
-
+          <li><strong><%= link_to 'New & Media', page_path('media')%></strong></li>
+          <li><strong><%= link_to 'Donate', root_path('')%></strong></li>
         </ul>
 
       </nav>
