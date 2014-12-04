@@ -51,11 +51,7 @@
 <div id="top">
   <div class="container">
    <div class="fourteen columns">
-
       <p>  Annual Report | Contact Us |  <strong><a href="#">DONATE</a></strong></p>
-      
-     
- 
     </div>
   </div>
 </div>
@@ -94,17 +90,10 @@
               <h2>Student Uniform</h2>
               <h3><span>$</span>25</h3>
               <p>Provides one uniform for a high school student employee</p>
-
             </label>
           </article>
-
-          <!--<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-                data-description="Support C4C">
-        </script> -->
           <button class="stripe-button-el" data-amount="2500">Pay Now</button>
           <!--handle selecting your own amount of money with paypal-->
-
       <% end %>
     </div>
 
@@ -117,11 +106,7 @@
               <p>Provides jerseys for 5 elementary student-athletes</p>
             </label>
           </article>
-
-          <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                  data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-                  data-description="Support C4C">
-          </script>
+          <button class="stripe-button-el" data-amount="5000">Pay Now</button>
           <!--handle selecting your own amount of money with paypal-->
 
       <% end %>
@@ -174,15 +159,10 @@
       
     </label>
   </article>
-
-  <!--<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="Support C4C">
-  </script> -->
+  <button class="stripe-button-el" data-amount="2500">Pay Now</button>
   <!--handle selecting your own amount of money with paypal-->
   
 <% end %>
-<button class="stripe-button-el" data-amount="2500">Pay Now</button>
 </div>
 <div class="four columns omega">
 <%= form_tag charges_path do %>
@@ -274,21 +254,45 @@
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="https://checkout.stripe.com/checkout.js"></script>
   <script>
+    var csrf_token = null;
+    var amount = null;
+
       var handler = StripeCheckout.configure({
           key: '<%= Rails.configuration.stripe[:publishable_key] %>',
           //image: '/square-image.png',
           token: function(token) {
-              $.post('<%= charges_path %>', {token: token, amount: 1000});
+              $.post(
+                '<%= charges_path %>',
+                {
+                  token: token,
+                  authenticity_token: csrf_token,
+                  amount: amount
+                },
+                function(data)
+                {
+                    if (data.success)
+                    {
+                        console.log(data.message);
+                    }
+                    else
+                    {
+                        console.log(data.message);
+                    }
+                },
+                'json'
+              );
           }
       });
 
       $('.stripe-button-el').on('click', function(e) {
           // Open Checkout with further options
           amount = $(this).attr('data-amount')
+          csrf_token = $(this).parent().find("input[name='authenticity_token']").val();
+
           handler.open({
               name: 'c4cinc.org',
-              description: 'Support C4C ($'+amount+')',
-              amount: amount
+              description: 'Support C4C ($'+(amount/100)+')',
+              amount: amount,
           });
           e.preventDefault();
       });
