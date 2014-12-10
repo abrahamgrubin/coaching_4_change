@@ -121,6 +121,32 @@
         .container .offset-by-thirteen              { padding-left: 624px; }
         .container .offset-by-fourteen              { padding-left: 672px; }
         .container .offset-by-fifteen               { padding-left: 720px; }
+
+          .nav {
+    width:100%;
+  }
+  .nav-item {
+    width:100%;
+    float:none;
+  }
+  .nav-mobile {
+    display:block;
+  }
+
+  .nav-list {
+    display:none;
+  }
+    #top {
+        display:none;
+    }
+    #header img {
+        height:60%;
+        width:60%;
+        float:left;
+        padding-top: 5%;
+        padding-left:5%;
+        margin-left: 0%;
+    }
     }
 
 
@@ -170,7 +196,31 @@
         .container .offset-by-thirteen,
         .container .offset-by-fourteen,
         .container .offset-by-fifteen { padding-left: 0; }
+         .nav {
+    width:100%;
+  }
+  .nav-item {
+    width:100%;
+    float:none;
+  }
+  .nav-mobile {
+    display:block;
+  }
 
+  .nav-list {
+    display:none;
+  }
+    #top {
+        display:none;
+    }
+    #header img {
+        height:60%;
+        width:60%;
+        float:left;
+        padding-top: 5%;
+        padding-left:5%;
+        margin-left: 0%;
+    }
     }
 
 
@@ -203,9 +253,188 @@
         .container .sixteen.columns,
         .container .one-third.column,
         .container .two-thirds.column { width: 420px; }
+          .nav {
+    width:100%;
+  }
+  .nav-item {
+    width:100%;
+    float:none;
+  }
+  .nav-mobile {
+    display:block;
+  }
+
+  .nav-list {
+    display:none;
+  }
+    #top {
+        display:none;
+    }
+    #header img {
+        height:60%;
+        width:60%;
+        float:left;
+        padding-top: 5%;
+        padding-left:5%;
+        margin-left: 0%;
+    }
     }
 
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+  
 
+  .nav {
+    width:100%;
+  }
+  .nav-item {
+    width:100%;
+    float:none;
+  }
+  .nav-mobile {
+    display:block;
+  }
+
+  .nav-list {
+    display:none;
+  }
+    #top {
+        display:none;
+    }
+    #header img {
+        height:60%;
+        width:60%;
+        float:left;
+        padding-top: 5%;
+        padding-left:5%;
+        margin-left: 0%;
+    }
+ #about_us .ten.columns {
+    display:none;
+    
+ }
+
+ #about_us .six.columns {
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    padding-bottom:0px;
+
+ }
+
+
+#section2 {
+    padding-top: 200%;
+}
+
+
+
+#social1 span img {
+    display:none;
+}
+
+#social1 br {
+    display:none;
+}
+
+#social1 .one-third.column {
+    margin-bottom: 10%; 
+    
+}
+
+#sponsors {
+    display:none;
+}
+#sponsors .one-sixth.column {
+    display:none;
+}
+
+#sponsors h1 {
+    display: none;
+}
+
+#sponsors br {
+    display:hidden;
+
+}
+
+#header .bar {
+    display:inline-block;
+    
+}
+
+#our_team img {
+ 
+  /*width: 10%;
+  height: 23%;*/
+  width: 100px;
+  height: 100px;
+    }
+#our_team h1 {
+    font-size: 2.5em;
+}
+
+#media h1 {
+    font-size: 2.5em;
+}
+
+#media .container .sixteen.columns h2 {
+  color: #13496C;
+  margin-top:2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  line-height: 1.2em;
+  font-size: 1em;
+
+}
+#media .container .sixteen.columns  h3 {
+  color: #13496C;
+  font-size: .75em;
+  font-family: Varela Round;
+  margin-left: 5%;
+  margin-right: 5%;
+  
+}
+
+#media .container .sixteen.columns  h4{
+  color: #13496C;
+  font-family: Varela Round;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size:.75em;
+  line-height: .1em;
+}
+#social span img {
+    display:none;
+}
+
+#social br {
+    display:none;
+}
+
+#social .one-third.column {
+    margin-bottom: 10%; 
+    
+}
+
+ #programs h1{
+    font-size:2em;
+ }
+
+ #programs h2 {
+    display:none;
+ }
+#coaching_leadership .stepback img {
+    display:none;
+ }
+
+ #partners h1 {
+  display:none;
+}
+
+#partners .one-seventh.column {
+  display:none;
+}
+}
 /* #Clearing
 ================================================== */
 

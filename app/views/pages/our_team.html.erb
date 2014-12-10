@@ -8,7 +8,7 @@
   <!-- Basic Page Needs
   ================================================== -->
   <meta charset="utf-8">
-  <title>Coaching 4 Change - Programs</title>
+  <title>Coaching4Change - Our Team</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -77,10 +77,8 @@ $(document).ready(function(){
   <div class="container">
    <div class="fourteen columns">
 
-      <p>  Annual Report | Newsletter | <strong><a href="">Contact Us</a></strong></p><!-- <strong><a href="#">DONATE</a></strong></p>-->
+      <p>  <a href="http://visitor.r20.constantcontact.com/d.jsp?llr=ft84ieoab&p=oi&m=1114687663717&sit=s5zxucdib&f=7edcffad-27c7-408d-b567-05ba675d2731">Newsletter</a> | <a href="contact_us.html.erb">Contact Us</a> |  <strong><a href="media.html.erb">News & Media</a></strong></p>
       
-     
- 
     </div>
   </div>
 </div>
@@ -88,21 +86,25 @@ $(document).ready(function(){
 <div id="header">
   <div class="container">
     <div class="sixteen columns">
-      <nav>
+      <nav class="nav">
       <div class="logo">
-         <%= link_to image_tag("c4c-logo-print.png"), root_path('')%>
+        <%= image_tag("c4c-logo-print.png")%>
       </div>
-        <ul>
-          <li><strong><%= link_to 'Programs', page_path('programs')%></strong></li>
-          <li><strong><%= link_to 'New & Media', page_path('media')%></strong></li>
-          <li><strong><%= link_to 'Donate', root_path('')%></strong></li>
+        
+
+  
+        <ul class="nav-list">
+           <li class="nav-item"><strong><%= link_to 'Programs', page_path('programs')%></strong></li>
+           <li class="nav-item"><strong><%= link_to 'Our Team', page_path('our_team')%></strong></li>
+         
+            <li class="nav-item"><strong><%= link_to 'Donate', new_charge_path %></strong></li>
+
         </ul>
 
       </nav>
    </div>
  </div>
 </div>
-
 
 <div id="cascade">
   <div id="our_team">
@@ -151,7 +153,7 @@ $(document).ready(function(){
 
         <h2>Ken Michel</h2>
         <h3>CEO of Michel Associates, LTD</h3>
-        <p><img src="/assets/Ken.00_jpg_srz"/>Kenneth Michel has over 34 years of direct experience in the affordable housing industry with an emphasis on federal and state housing finance programs. He began his career in 1977 at Greater Boston Development, Inc. (now Boston Capital Partners), in their Syndication Department specializing in the structuring, monitoring, and equity financing of Rural Development (RD) Section 515 Rural Rental Housing Program (formerly FmHA Section 515) low-income properties. In 1981, he joined The Langelier Company, Inc., where he was head of the Acquisitions Department, focusing on the acquisition of affordable housing properties featuring HUD or state agency financing and HUD Section 8 rental subsidies. In 1986, he founded Michel Associates, Ltd., which has successfully sponsored a series of tax credit investment partnerships for high net-worth individuals, financial institutions, and corporations. Mr. Michel currently holds an ownership interest as a limited or general partner in over 10,000 affordable housing apartment units in various locations throughout the United States. Mr. Michel served as a past Director of the Council for Affordable and Rural Housing (CARH), a national advocacy group based in Washington, DC representing the interest of developers, owners and managers of rural housing. He also served as Chairman of the Stonehill College Annual Fund, is the former Chairman of the Stonehill College Board of Fellows, and a former Corporator of Danversbank.</p>
+        <p>Kenneth Michel has over 34 years of direct experience in the affordable housing industry with an emphasis on federal and state housing finance programs. He began his career in 1977 at Greater Boston Development, Inc. (now Boston Capital Partners), in their Syndication Department specializing in the structuring, monitoring, and equity financing of Rural Development (RD) Section 515 Rural Rental Housing Program (formerly FmHA Section 515) low-income properties. In 1981, he joined The Langelier Company, Inc., where he was head of the Acquisitions Department, focusing on the acquisition of affordable housing properties featuring HUD or state agency financing and HUD Section 8 rental subsidies. In 1986, he founded Michel Associates, Ltd., which has successfully sponsored a series of tax credit investment partnerships for high net-worth individuals, financial institutions, and corporations. Mr. Michel currently holds an ownership interest as a limited or general partner in over 10,000 affordable housing apartment units in various locations throughout the United States. Mr. Michel served as a past Director of the Council for Affordable and Rural Housing (CARH), a national advocacy group based in Washington, DC representing the interest of developers, owners and managers of rural housing. He also served as Chairman of the Stonehill College Annual Fund, is the former Chairman of the Stonehill College Board of Fellows, and a former Corporator of Danversbank.</p>
 
         <h2>David McLaughlin</h2>
         <h3>Associate Head Basketball Coach, Northeastern University</h3>
@@ -161,13 +163,11 @@ $(document).ready(function(){
         <h3>Amerprise Financial Wealth Manager</h3>
         <p><img src="/assets/chris.jpg"/>Chris Civale is an Ameriprise Private Wealth Advisor, who has extensive experience helping affluent clients with their goals to preserve and grow their assets. He is among the most qualified and credentialed advisors in the firm, and I’ll work with an established network of expert resources to help you bring your dreams and goals more within reach.</br></br></br></br></p>
 
-        <h2>Salvador Pina</h2>
-        <h3>Director of Economic Development Wareham</h3>
-        <p><img src="/assets/sal.png"/>Salvador Pina is the Director of The Wareham Community and Economic Development Authority, which is funded in large part by Community Development Block Grants provided through and monitored by the Department of Housing and Community Development. His department carries and manages Housing rehabilitation program, sign and façade program, transportation subsidy programs and recreation subsidies for Wareham's low and moderate income households, a literacy program and after school programs. Projects completed are planning projects for downtown revitalization, a complete building renovation for a Head Start Program and infrastructure improvements for sewer, sidewalks and handicapped accessory improvements. Economic development activity is related to business retention and recruitment and workforce training opportunities.</p>
-
-        <h2>Kerri Ansello</h2>
+        <h2>Kerri Riley Ansello</h2>
         <h3> Assistant Vice President and Senior Counsel and Secretary, Sun Life Financial U.S.</h3>
         <p>Kerri Ansello is a member of the Corporate Practice Group of Sun Life Financial's U.S. Law Department. She is a primary legal advisor with respect to corporate governance and insurance regulatory matters for Sun Life Financial's U.S. subsidiaries. In addition to these responsibilities, Kerri provides advice and counseling on transactional, ERISA, and contract matters and serves as corporate secretary for the organization's U.S. subsidiaries. Kerri joined Sun Life Financial in 2005. She received her B.A. in Foreign Languages from Stonehill College in 1996 and her J.D. from Villanova University School of Law in 1999. After law school and prior to joining Sun Life Financial, Kerri worked as an Investigator at the U.S. Department of Labor, Employee Benefits Security Administration, and as an Assistant District Attorney in Middlesex County, Massachusetts.</p>
+
+       
       </div>
     </div>
   </div>
@@ -196,8 +196,43 @@ $(document).ready(function(){
     </div>
   </div>
 </div>
+     
       <!--- Our goal is to create an environment that motivates, engages, and inspire continued learning as well as personal growth. -->
-      
+<script type="text/javascript">
+(function () {
+    
+    // Create mobile element
+    var mobile = document.createElement('div');
+    mobile.className = 'nav-mobile';
+    document.querySelector('.nav').appendChild(mobile);
+
+    // hasClass
+    function hasClass(elem, className) {
+        return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+    }
+
+    // toggleClass
+    function toggleClass(elem, className) {
+        var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, ' ') + ' ';
+        if (hasClass(elem, className)) {
+            while (newClass.indexOf(' ' + className + ' ') >= 0) {
+                newClass = newClass.replace(' ' + className + ' ', ' ');
+            }
+            elem.className = newClass.replace(/^\s+|\s+$/g, '');
+        } else {
+            elem.className += ' ' + className;
+        }
+    }
+
+    // Mobile nav function
+    var mobileNav = document.querySelector('.nav-mobile');
+    var toggle = document.querySelector('.nav-list');
+    mobileNav.onclick = function () {
+        toggleClass(this, 'nav-mobile-open');
+        toggleClass(toggle, 'nav-active');
+    };
+})();
+</script>      
 
 <!-- End Document
 ================================================== -->

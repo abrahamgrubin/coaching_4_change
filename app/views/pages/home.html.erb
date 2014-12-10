@@ -8,7 +8,7 @@
   <!-- Basic Page Needs
   ================================================== -->
   <meta charset="utf-8">
-  <title>Coaching 4 Change</title>
+  <title>Coaching4Change</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -56,7 +56,7 @@
   <div class="container">
    <div class="fourteen columns">
 
-      <p>  Annual Report | Contact Us |  <strong><a href="#">DONATE</a></strong></p>
+      <p>  <a href="http://visitor.r20.constantcontact.com/d.jsp?llr=ft84ieoab&p=oi&m=1114687663717&sit=s5zxucdib&f=7edcffad-27c7-408d-b567-05ba675d2731">Newsletter</a> | <a href="pages/contact_us">Contact Us</a> |  <strong><a href="pages/media.html.erb">News & Media</a></strong></p>
       
     </div>
   </div>
@@ -65,16 +65,18 @@
 <div id="header">
   <div class="container">
     <div class="sixteen columns">
-      <nav>
+      <nav class="nav">
       <div class="logo">
-        <%= image_tag("c4c-logo-print.png")%>
+        <a href=""><img src="/assets/c4c-logo-print.png"/></a>
       </div>
-        <ul>
-          <li><strong><%= link_to 'Programs', page_path('programs')%></strong></li>
-          <li><strong><%= link_to 'Our Team', page_path('our_team')%></strong></li>
-          
-         
-           <li><strong><%= link_to 'New & Media', page_path('media')%></strong></li>
+        
+
+  
+        <ul class="nav-list">
+           <li class="nav-item"><strong><%= link_to 'Programs', page_path('programs')%></strong></li>
+           <li class="nav-item"><strong><%= link_to 'Our Team', page_path('our_team')%></strong></li>
+           
+          <li class="nav-item"><strong><a href="pages/donate">Donate</a></strong></li>
 
         </ul>
 
@@ -103,7 +105,7 @@
         </br>
         </br>
         <div class="move">
-          <strong><a href="#">Find out more!</a></strong>
+          <strong><%= link_to 'Find out more!', page_path('programs')%></strong>
         
         </div>
       </div>
@@ -146,7 +148,7 @@
           <!--<p>Native to South Central Los Angeles, Marquis Taylor studied at Stonehill College on a full basketball scholarship and at Smith College, where he received a Masters in Teaching in 2011. While at Smith, he recognized the need to engage students who were disenfranchised at school, and to teach them job readiness skills. Combining his professional and basketball experience, he founded Coaching For Change.</p>-->
           <p><strong>Coaching4Change's unique</strong> programs empower at-risk youth by allowing them to take responsibility and ownership over projects. Particpants decide the tasks and timelines to make their project a success.</p>
           <p><strong>Each project operates </strong> independently because our <em>High School students control</em> the outcome of their project.</p>
-          <a href=""><strong>OUR TEAM</strong></a>
+          <strong><%= link_to 'OUR TEAM', page_path('our_team')%></strong></a>
       </div>
     </div>
 
@@ -159,7 +161,7 @@
            <h1>Literacy</h1>
            <p><strong>C4C programs</strong> entices and motivates young people to complete high school and continue their education. </p>
             <strong>Each High School Student</strong> who participates in Coaching4Change recieves tutors from local colleges to help improve their grades and realize their full potential. The High School Students pay it forward by tutoring middle and elemnetary school students.</p>
-           <a href=""><strong>LEARN MORE</strong></a>
+           <strong><%= link_to 'LEARN MORE', page_path('programs')%></strong></a>
         </div>
     </div>
   
@@ -172,7 +174,8 @@
           <h1>Coaching</h1>
           <p><strong>The experience of sports coaching</strong> teaches transferable skills. We utilize this tool to empower our teens to lead and work together.</p>
           <p><strong>C4C's High school students</strong> learn how to run a three on three basketball tournament or organize, coach and referee a middle/elementary school sports afterschool program.</p>
-         <a href=""><strong>SUPPORT US</strong></a>
+          <strong><%=link_to 'SUPPORT US', new_charge_path %></strong>
+         
            <!--<p><strong>Youth Sports Leadership Program (YSLP)</strong> is an apprenticeship program that combines business with coaching as students learn to plan and implement a sports tournament at their own school...</p>
            <p><strong>Coach Leadership Academy (CLA)</strong> is a coaching apprenticeship program in which high school students build self-confidence and develop leadership, teamwork, and other soft business skills by coaching elementary school students (3rd-5th graders)...
         <a href="">More programs</a>-->
@@ -329,15 +332,233 @@
           <%= image_tag ("echoinggreen.jpg")%>
       
       </div>
+
       <div class="one-sixth column">
-        <div class="fresh"><div class="notfresh"><%= image_tag ("fresh_city.png")%></div></div>
+        <div class="fresh"><div class="notfresh"><%= image_tag ("fresh_city.png")%></div>
+      </div>
       </div>
     </br>
-       <div class="but"> <a href="#"><strong>MORE SPONSORS</strong></a></div>
+       <div class="hideshow">
+         <div class="but"> <button><strong>Our Donors</strong></button></div>
+       </div>
+    </div>
+  </div>
+
+  <div class="message">
+    <div class="container">
+      <div class="sixteen columns">
+        <h1>Donors</h1>
+        <!--<p>Become a sponsor! Please donate to our Coaching4Change </p>-->If you would like to become a corporate sponsor please contact <a href="mailto:marquis@c4cinc.org?Subject=My%20company%20would%20like%20to%20become%20a%20corporate%20sponsor" target="_top">marquis@c4cinc.org</a>or <%=link_to'Donate now', new_charge_path%></p>
+        <div class="one-third columns">
+          <h2>Game Changers ($25,000+)</h2>
+           <ul>
+            <li>Strategic Grant Partners</li>
+            <li>Echoing Green</li>
+            <li>Amelia Peabody Foundation</li>
+            <li>Plymouth County District Attorney's Office</li>
+          </ul>
+        </div>
+        <div class="one-third columns">
+          <h2>MVPs($10,000-$24,999)</h2>
+          <ul>
+            <li>Eastern Bank</li>
+            <li>Lenny Zakim Fund</li>
+            <li>TripAdvisor</li>
+          </ul>
+        </div>
+        <div class="one-third columns">
+          <h2>Champions($5,000-$9,999)</h2>
+          <ul>
+            
+            <li>Goddard Foundation</li>
+            <li>Crescent Credit Union</li>
+            <li>Chris Civale</li>
+            <li>Cheryl Forte</li>
+            <li>Michael & Melinda Berman</li>
+            <li>Paul & Phyllis Fireman Foundation</li>
+            <li>The Clipper Ship Foundation</li>
+            <li>Orville W. Forte Charitable Foundation</li>
+            <li>Steve & Jeryl Oristaglio</li>
+            <li>Carmen Scarpa</li>
+
+          </ul>
+        </div>
+      </div>
+    </div> 
+   <div id="allstar">
+    <div class="container">
+      <div class="sixteen columns">
+        <div class="one-third columns">
+          <h2>All-Stars ($1,000-$4,999)</h2>
+          <ul>
+            
+            <li>Mark Schuster</li>
+            <li>CHNA22</li>
+            <li>Ameriprise Financial</li>
+            <li>North Easton Saving Bank</li>
+            <li>Forest Foundation</li>
+            <li>Xerox Foundation</li>
+            <li>Robert & Susan Price</li>
+            <li>William & Karen Tanzer</li>
+            <li>Rick Mastria</li>
+            <li>Ken Michel</li>
+            <li>Loretta Holt</li>
+            <li>Claire Reade & Earl Steinberg</li>
+            <li>Lisa Issroff</li>
+            <li>Jeremy Seidman</li>
+                        
+          </ul>
+        </div>
+        
+        <div class="one-third columns">
+          <h2>Fans(Up to $999)</h2>
+           <ul>
+            <li>Liza Talusan</li>
+            <li>Francis Dillon</li>
+            <li>Lucy Mule</li>
+            <li>Mattie Sanders</li>
+            <li>Earl Phalen</li>
+            <li>Rebecca Haag</li>
+            <li>Tony Pires</li>
+            <li>Janet Sahr</li>
+            <li>Jeff Goodman</li>
+            <li>Alexander Meadow</li>
+            <li>Ethan White</li>
+            <li>Liam & Kyle Kerr</li>
+            <li>Michael Kerr</li>
+            <li>Sean & Emily Levy</li>
+            <li>Chuck Levy</li>
+            <li>Marie Kelly</li>
+            <li>Jacquelyn Vanaman</li>
+            <li>Marlon Terrell</li>
+            <li>Josh Biren</li>
+            <li>Stephen Muzrall</li>
+            <li>Mattie Sanders</li>
+            <li>Barbara Davis</li>
+            <li>Alisa King</li>
+            <li>Daniel & Janine Morley</li>
+            <li>Christopher & Kara Colby</li>
+            <li>Constance & Daniel Claybrook</li>
+            <li>Barbara Braun & Joseph Beek</li>
+            <li>Jeb Beek</li>
+            <li>Matthew & Anne Shute</li>
+            <li>Nic Zanghi</li>
+            <li>Sal & Bernice Abisso</li>
+            <li>Pat Olson</li>
+            <li>Anne Shute</li>
+            <li>Cetta Coniglio</li>
+            <li>Jessica Boyden</li>
+            <li>Eve Bryant</li>
+            <li>Kevin Ray</li>
+            <li>Dave Denne</li>
+            <li>Meaghan Durkin</li>
+            <li>Kathy & Bill Ward</li>
+            <li>Gean Rowan</li>
+            <li>Briody Friedman</li>
+            <li>Fred Davie</li>
+            <li>John & Susan Forbush</li>
+            <li>Jim & Marla Greenfield</li>
+            <li>Kuna Tavalin</li>
+            <li>Mike Catapano</li>
+            <li>Bonnie & Paul Lieberman</li>
+            <li>Sheryl & Herb Lovit</li>
+            <li>Paul & Kristine Accetta</li>
+            <li>Walker & Dunlop LLC</li>
+            <li>Roz & Neal Drawas</li>
+            <li>Leslie & Mike Gaffin</li>
+            <li>Steve & Lee Paul</li>
+            <li>Salvador Pina</li>
+            <li>PWC</li>
+            <li>Susan & Jeffrey Rudnick</li>
+            <li>Teresa & Patrick Hagarty</li>
+            <li>Monique Myers</li>
+            <li>Mary & Gregory Boyd</li>
+            <li>Audrey & John Frank</li>
+            <li>Barbara Berke</li>
+            <li>Kathryn & Michael Cope</li>
+            <li>Derik Malone</li>
+            <li>Leslie & Joseph Mahoney</li>
+            <li>Robert & Laurie Revil</li>
+            
+           
+          </ul>
+        </div>
+        <div class="one-third columns">
+          <h2>Even More Fans!</h2> 
+          <ul>
+            <li>Matt & Carol Shedd</li>
+            <li>Beth & Mark Volk</li>
+            <li>Claire Layman</li>
+            <li>Lisa Daiuto</li>
+            <li>Scott Spelfogel</li>
+            <li>John Durkin</li>
+            <li>William & Susan Meadow</li>
+            <li>Deborah Riley</li>
+            <li>Carolyn Mader</li>
+            <li>Gregory Tanzer</li>
+            <li>Ricardo & Marla Lewitus</li>
+            <li>Andy Gnazzo</li>
+            <li>Anita Berman</li>
+            <li>Terence McCoy</li>
+            <li>Dominic & Susan Vingiano</li>
+            <li>Alan & Randi Biren</li>
+            <li>Lynne Rosansky</li>
+            <li>Ellen Kantrowitz</li>
+            <li>Roseanne Tomeski</li>
+            <li>Justin Kang</li>
+            <li>Michael Darling</li>
+            <li>Susan & Howard Spiller</li>
+            <li>Buffalo Wild Wings - Shrewsburry</li>
+            <li>Timothy & Michele Holt</li>
+            <li>John & Kristen Holt</li>
+            <li>Leigh Ingalls</li>
+            <li>Alan & Lori O'Connor</li>
+            <li>Bernice & John Morley</li>
+            <li>John & Diane Holt</li>
+            <li>Debra Ingalls</li>
+            <li>Joanne Post</li>
+            <li>Jarod Devos</li>
+            <li>Kate Hathaway</li>
+            <li>Sean Friel</li>
+            <li>Maureen Duncan</li>
+            <li>Jim & Janet Lafreniere</li>
+            <li>Maura Cabral</li>
+            <li>Stacey Priestly</li>
+            <li>Maria Malenfant</li>
+            <li>Motta Friedman</li>
+            <li>Phillips Friedman</li>
+            <li>Couture Friedman</li>
+            <li>Clarissa Whatley</li>
+            <li>Mary Connolly</li>
+            <li>Patricia Brown</li>
+            <li>Patricia & Joseph Favazza</li>
+             <li>Sydney O'Connor</li>
+            <li>Evan & Kim O'Connor</li>
+            <li>Gail Vidita</li>
+            <li>Val Edmond</li>
+            <li>Andrea Ramallo</li>
+            <li>Carter Smith</li>
+            <li>Em Sullivan</li>
+            <li>Ed Lynch</li>
+            <li>Peterson Friedman</li>
+            <li>Brian Melo</li>
+            <li>Emily Fish</li>
+            <li>Tony Abbiati</li>
+            <li>Steven & Nancy Latham</li>
+            <li>Barry & Kristin Hilliard</li>
+            <li>Martin McGovern</li>
+            <li>Mary & Padhraic Friel</li>
+             <li>Cynthia Holt</li>
+            <li>Manel Perry</li>
+            <li>Mike Revil</li>
+            <li>Eleanor Lacovelli</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
+</div>
 
 
 
@@ -368,7 +589,50 @@
 </div>
       <!--- Our goal is to create an environment that motivates, engages, and inspire continued learning as well as personal growth. -->
       
+<script>
+$(document).ready(function(){
+ $(".hideshow  button").click(function(){
+  $(".message").toggle();
+  $(".hideshow button").hide(300);
+  });
+});
+</script>
 
+<script type="text/javascript">
+(function () {
+    
+    // Create mobile element
+    var mobile = document.createElement('div');
+    mobile.className = 'nav-mobile';
+    document.querySelector('.nav').appendChild(mobile);
+
+    // hasClass
+    function hasClass(elem, className) {
+        return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+    }
+
+    // toggleClass
+    function toggleClass(elem, className) {
+        var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, ' ') + ' ';
+        if (hasClass(elem, className)) {
+            while (newClass.indexOf(' ' + className + ' ') >= 0) {
+                newClass = newClass.replace(' ' + className + ' ', ' ');
+            }
+            elem.className = newClass.replace(/^\s+|\s+$/g, '');
+        } else {
+            elem.className += ' ' + className;
+        }
+    }
+
+    // Mobile nav function
+    var mobileNav = document.querySelector('.nav-mobile');
+    var toggle = document.querySelector('.nav-list');
+    mobileNav.onclick = function () {
+        toggleClass(this, 'nav-mobile-open');
+        toggleClass(toggle, 'nav-active');
+    };
+})();
+</script>
 <!-- End Document
 ================================================== -->
 </body>

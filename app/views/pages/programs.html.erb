@@ -8,7 +8,7 @@
   <!-- Basic Page Needs
   ================================================== -->
   <meta charset="utf-8">
-  <title>Coaching 4 Change - Programs</title>
+  <title>Coaching4Change - Programs</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -70,10 +70,8 @@ $( "button" ).click(function() {
   <div class="container">
    <div class="fourteen columns">
 
-      <p>  Annual Report | Contact Us |  <strong><%= link_to 'DONATE', new_charge_path %></strong></p>
+      <p>  <a href="http://visitor.r20.constantcontact.com/d.jsp?llr=ft84ieoab&p=oi&m=1114687663717&sit=s5zxucdib&f=7edcffad-27c7-408d-b567-05ba675d2731">Newsletter</a> | <a href="pages/contact_us.html.erb">Contact Us</a> |  <strong><a href="pages/media.html.erb">News & Media</a></strong></p>
       
-     
- 
     </div>
   </div>
 </div>
@@ -81,25 +79,25 @@ $( "button" ).click(function() {
 <div id="header">
   <div class="container">
     <div class="sixteen columns">
-      <nav>
+      <nav class="nav">
       <div class="logo">
-        <%= link_to image_tag("c4c-logo-print.png"), root_path('')%>
+        <%= image_tag("c4c-logo-print.png")%>
       </div>
-        <ul>
-          
-          
-          <li><strong><%= link_to 'Our Team', page_path('our_team')%></strong></li>
-         
-          <li><strong><%= link_to 'New & Media', page_path('media')%></strong></li>
-          <li><strong><%= link_to 'Donate', new_charge_path %></strong></li>
+        
+
+  
+        <ul class="nav-list">
+           <li class="nav-item"><strong><%= link_to 'Programs', page_path('programs')%></strong></li>
+           <li class="nav-item"><strong><%= link_to 'Our Team', page_path('our_team')%></strong></li>
            
+            <li class="nav-item"><strong><%= link_to 'Donate', new_charge_path %></strong></li>
+
         </ul>
 
       </nav>
    </div>
  </div>
 </div>
-
 
 <div id="cascade">
 
@@ -116,16 +114,20 @@ $( "button" ).click(function() {
          <h1>Our Programs</h1>
          <!--<h2><strong>Our Process</strong></h2>-->
       
-         <p>We create opportunities for our participants to thrive outside of school to build confidence that they can carry through out life. Our participants come from backgrounds where many of their peers are dropping out of school. Our programs engage High School students and allow them to enjoy learning through experience. These skills carry over into the classroom, helping the High School Students stay engaged and go onto graduate.</p>
+         <p>We create opportunities for our participants to thrive outside of school. Our students build confidence that they can carry throughout life. Our participants come from backgrounds where many of their peers are dropping out of school and are not prepared for life after high school. Our programs engage High School Students and allow them to enjoy learning through experience. These skills carry over into the classroom, helping the High School Students stay engaged and go onto graduate.</p>
         
          <img src="/assets/graphic.png">
 
         
           
           <h2><strong>Coaching Leadership Academy</strong></h2>
-          <p><strong>Coach Leadership Academy (CLA)</strong> is a coaching apprenticeship program in which high school students build self-confidence and develop leadership, teamwork, and other soft business skills by coaching elementary school students (3rd-5th graders).  Students participate in a 8-10 week program for two hours a day, four days a week, after school.</p><div class="stepback"><img src="/assets/stepback.png"/></div>
+          <div class="stepback"><img src="/assets/stepback.png"/></div> 
+          <p><strong>Coach Leadership Academy (CLA)</strong>is a coaching apprenticeship program where high school students learn from local college students about organizational and study skills. Our high school students are able to apply these skills and build their self-confidence by coaching and tutoring at their local elementary or middle schools.</p> 
+          
+          <p>Our program is preparing high school students to be college and career ready. They apply thier learned skills and develop leadership, teamwork and other life skills by coaching youth (3rd-8th grade). Students participate in a 10-15 week program for two hours a day, four days a week, after school each semester.</p>
+          
+          <p>For the first five weeks the college students are teaching our high school students organizational skills. In the weeks following, they are trained how to be effective coaches, building plans for their sessions which will be held at the local elementary/middle schools.  Two days during the week they are on-site at the elementary/middle school with a group of 45-60 students (1:3 HS Coach : Student ratio) to teach them sports-related games and drills.  The fourth day is reserved for the high school students do homework and receive support for their academic classes.</p>
 
-          <p>One day each week, they are trained how to be effective coaches, building plans for their sessions with elementary school students.  Two days during the week they are on-site at the elementary school with a group of 45 elementary students (1:3 HS/ES student ratio) to teach them basketball-related games and drills.  The fourth day is reserved for academic support when the high school students do homework and receive support for their academic classes.</p>
 
                  
          
@@ -137,9 +139,13 @@ $( "button" ).click(function() {
       
        
         <h2><strong>Youth Sports Leadership Program</strong></h2>
-        <p><strong>Youth Sports Leadership Program (YSLP)</strong> is an apprenticeship program that combines business with coaching as students learn to plan and implement a 3 on 3 basketball tournament at their own school.  The focus is on developing the leadership, teamwork, planning and responsibility required to plan and implement a successful event.  This program is particularly meaningful to students’ development because they are challenged to run a <em>small business</em>.</p> 
+        <p><strong>Youth Sports Leadership Program (YSLP)</strong> is an apprenticeship program that combines business with coaching as students learn to plan and implement a sporting event at their own school.  The focus is on developing the leadership, teamwork, planning and responsibility required to plan and implement a successful event.  This program is particularly meaningful to students’ development because they are challenged to run a <em>small business</em>.</p> 
        
-        <p>They must plan and implement an event, running the gamut from recruiting teams, securing space, creating and managing a budget, buying inventory for concessions, managing concessions, hiring referees and overseeing the event itself to ensure that it is both successful and profitable.  For most students, this experience is the first time their math skills become relevant to them and they are accountable for showing up, delivering on commitments and managing inevitable team disagreements.  This experience is fundamental in getting these youth to see the importance of work and the satisfaction of accomplishing their objectives.</p>
+        <p>They must plan and implement an event, running the gamut from recruiting teams, securing space, creating and managing a budget, buying inventory for concessions, managing concessions, hiring referees and overseeing the event itself to ensure that it is both successful and profitable.  For most students, this experience is the first time their math skills become relevant to them and they are accountable for showing up, delivering on commitments and managing inevitable team disagreements.  This experience is fundamental in getting these youth to see the importance of work and the satisfaction of accomplishing their objectives.</br>
+        </br>
+        <button><a href="donate">Support Our Programs</a></button></p>
+
+
      </div>
     </div>
     </div>
@@ -260,7 +266,7 @@ Stonehill College in front of all the SERVT programs. The topic of his graduatio
 
 <div id="partners">
   <div class="container">
-    <div class="tweleve columns offset-by-two">
+    <div class="sixteen columns">
       <div class="part"><h1>Our Partners</h1></div>
         
         <div class="one-seventh column">
@@ -289,7 +295,7 @@ Stonehill College in front of all the SERVT programs. The topic of his graduatio
       </div>
 
       <div class="one-seventh column">
-        <img src="/assets/brocktonbgc.jpg">
+        <img src="/assets/brocktonbgc.jpg" id="bbgc">
       </div>
        <div class="one-seventh column">
         <img src="/assets/learn_fresh.png" id="fres">
@@ -297,7 +303,7 @@ Stonehill College in front of all the SERVT programs. The topic of his graduatio
   </div>
 </div>
     </br>
-       <div class="but"><a href="#"><strong>Become a Partner</strong></a></div>
+       <div class="but"><a href="mailto:pete@c4cinc.org?Subject=My%20organization%20would%20like%20to%20partner%20with%20Coaching4Change">Become a partner</a></div>
     </div>
   </div>
 
@@ -334,7 +340,52 @@ $(document).ready(function(){
   });
 });
 </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-57450017-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+(function () {
+    
+    // Create mobile element
+    var mobile = document.createElement('div');
+    mobile.className = 'nav-mobile';
+    document.querySelector('.nav').appendChild(mobile);
+
+    // hasClass
+    function hasClass(elem, className) {
+        return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+    }
+
+    // toggleClass
+    function toggleClass(elem, className) {
+        var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, ' ') + ' ';
+        if (hasClass(elem, className)) {
+            while (newClass.indexOf(' ' + className + ' ') >= 0) {
+                newClass = newClass.replace(' ' + className + ' ', ' ');
+            }
+            elem.className = newClass.replace(/^\s+|\s+$/g, '');
+        } else {
+            elem.className += ' ' + className;
+        }
+    }
+
+    // Mobile nav function
+    var mobileNav = document.querySelector('.nav-mobile');
+    var toggle = document.querySelector('.nav-list');
+    mobileNav.onclick = function () {
+        toggleClass(this, 'nav-mobile-open');
+        toggleClass(toggle, 'nav-active');
+    };
+})();
+</script>
 <!-- End Document
 ================================================== -->
 </body>

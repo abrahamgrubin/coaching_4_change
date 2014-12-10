@@ -1,0 +1,59 @@
+
+
+<div id="top">
+  <div class="container">
+   <div class="fourteen columns">
+
+      <p>  <a href="http://visitor.r20.constantcontact.com/d.jsp?llr=ft84ieoab&p=oi&m=1114687663717&sit=s5zxucdib&f=7edcffad-27c7-408d-b567-05ba675d2731">Newsletter</a> | <a href="contact_us">Contact Us</a> |  <strong><a href="pages/media.html.erb">News & Media</a></strong></p>
+      
+    </div>
+  </div>
+</div>
+
+<div id="header">
+  <div class="container">
+    <div class="sixteen columns">
+      <nav class="nav">
+      <div class="logo">
+        <a href=""><img src="/assets/c4c-logo-print.png"/></a>
+      </div>
+        
+<div class="bar">
+  <button><img src="/assets/hamburger.png"/></button>
+</div>
+<div class="navigation">
+  <nav>
+    <ul>
+     <li><strong><%= link_to 'Programs', page_path('programs')%></strong></li>
+     <li><strong><%= link_to 'Our Team', page_path('our_team')%></strong></li>
+     <li><strong><a href="http://visitor.r20.constantcontact.com/d.jsp?llr=ft84ieoab&p=oi&m=1114687663717&sit=s5zxucdib&f=7edcffad-27c7-408d-b567-05ba675d2731">Newsletter</a></strong></li>
+     <li><strong><a href="contact_us">Contact Us</a></strong></li>
+     <li><strong><a href="media">News & Media</a></strong></li>
+     <li><strong><a href="pages/donate">Donate</a></strong></li>
+
+    </ul>
+
+  </nav>
+</div>
+  
+        <ul class="nav-list">
+           <li class="nav-item"><strong><%= link_to 'Programs', page_path('programs')%></strong></li>
+           <li class="nav-item"><strong><%= link_to 'Our Team', page_path('our_team')%></strong></li>
+          <li class="nav-item"><strong><a href="pages/donate">Donate</a></strong></li>
+
+        </ul>
+
+      </nav>
+   </div>
+ </div>
+</div>
+
+
+
+<script>
+$(document).ready(function(){
+ $(".bar  button").click(function(){
+  $(".navigation").toggle();
+  });
+});
+</script>

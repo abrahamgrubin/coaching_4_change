@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Coaching 4 Change</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Varela Round:300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <!-- CSS
+  ================================================== -->
+ <%= stylesheet_link_tag "skeleton", "layout", "base" %>
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Favicons
+  ================================================== -->
+  <link rel="shortcut icon" href="images/c4c-images/logo_stacked.jpg">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  <!--<link rel="stylesheet" type="text/css" href="javascripts/slick-1.3.11/slick/slick.css"/>-->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css"/>
+  
+
+
+<!-- Start WOWSlider.com HEAD section -->
+  <!--<link rel="stylesheet" type="text/css" href="engine1//style.css" media="screen" />-->
+  <!--<script type="text/javascript" src="engine1//jquery.js"></script>-->
+<!-- End WOWSlider.com HEAD section -->
+
+
+</head>
+
+
+<body>
+  <!-- Primary Page Layout
+  ================================================== -->
+
+<div id="top">
+  <div class="container">
+   <div class="fourteen columns">
+
+      <p>  <a href="http://visitor.r20.constantcontact.com/d.jsp?llr=ft84ieoab&p=oi&m=1114687663717&sit=s5zxucdib&f=7edcffad-27c7-408d-b567-05ba675d2731">Newsletter</a> | <a href="contact_us">Contact Us</a> |  <strong><a href="media">News & Media</a></strong></p>
+      
+    </div>
+  </div>
+</div>
+
+<div id="header">
+  <div class="container">
+    <div class="sixteen columns">
+      <nav class="nav">
+      <div class="logo">
+        <a href="home"><img src="/assets/c4c-logo-print.png"/></a>
+      </div>
+        
+
+  
+        <ul class="nav-list">
+           <li class="nav-item"><strong><%= link_to 'Programs', page_path('programs')%></strong></li>
+           <li class="nav-item"><strong><%= link_to 'Our Team', page_path('our_team')%></strong></li>
+          
+          <li class="nav-item"><strong><a href="pages/donate">Donate</a></strong></li>
+
+        </ul>
+
+      </nav>
+   </div>
+ </div>
+</div>
+
+<div id="cascade">
+<div id="donate">
+<div class="container">
+  <div class="sixteen columns clearfix">
+    <h1>Support Us</h1>
+    <div class="par"><p>Please donate to Coaching4Change so we can continue to provide great programs for our community! You can also donate $10 by texting <a href="sms:80088?body=GIVE 18248">GIVE 18248 to 80088</a>. If you would like donate a different amount than listed below please <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=wqDPlShlbGZNtBpWXWKImUgtCalgMlnTnhBRQ1eWXEWdtJcGQdWZD2-lt_C&dispatch=5885d80a13c0db1f8e263663d3faee8d66f31424b43e9a70645c907a6cbd8fb4">click here</a>. If you would like to become a corporate sponsor, please contact <a href="mailto:marquis@c4cinc.org?subject=I%20would%20like%20to%20become%20a%20corporate%20sponsor">marquis@c4cinc.org</a>.</p></div>
+ 
+
+
+
+<div class="eight columns alpha">
+  <article>
+    <label class="amount">
+      <h2>Student Uniform</h2>
+      <%= image_tag "tshirt.png" %>
+      <h3><span>$</span>25</h3>
+      
+      <p>Provides one uniform for a high school student employee</p>
+<script src="https://checkout.stripe.com/checkout.js"></script>
+
+<button id="customButton">Donate $25</button>
+
+<script>
+  var handler = StripeCheckout.configure({
+    key: 'pk_test_IT15WFqXvwQCvMqSQ7aFrKxX',
+    image: '/square-image.png',
+    token: function(token) {
+      // Use the token to create the charge with a server-side script.
+      // You can access the token ID with `token.id`
+    }
+  });
+
+  $('#customButton').on('click', function(e) {
+    // Open Checkout with further options
+    handler.open({
+      name: 'Coaching4Change',
+      description: 'Student Uniform',
+      amount: 2500
+    });
+    e.preventDefault();
+  });
+
+  // Close Checkout on page navigation
+  $(window).on('popstate', function() {
+    handler.close();
+  });
+</script>
+</div>
+
+<div class="eight columns omega">
+
+ <article>
+  <label class="amount">
+    <h2>5 Jerseys</h2>
+    <%=image_tag "jersey.png"%>
+    <h3><span>$</span>50</h3>
+    <p>Provides jerseys for 5 elementary student-athletes</p>
+  </label>
+</article>
+
+<button id="customButton1">Donate $50</button>
+
+<script>
+  var handler = StripeCheckout.configure({
+    key: 'pk_test_IT15WFqXvwQCvMqSQ7aFrKxX',
+    image: '/square-image.png',
+    token: function(token) {
+      // Use the token to create the charge with a server-side script.
+      // You can access the token ID with `token.id`
+    }
+  });
+
+
+  $('#customButton1').on('click', function(e) {
+    // Open Checkout with further options
+    handler.open({
+      name: 'Coaching4Change',
+      description: '5 Jerseys',
+      amount: 5000
+    });
+    e.preventDefault();
+  });
+
+  // Close Checkout on page navigation
+  $(window).on('popstate', function() {
+    handler.close();
+  });
+</script>
+</div>
+
+
+    <div class="eight columns alpha">
+         <article>
+            <label class="amount">
+              <h2>Graduation Certificates</h2>
+              <%= image_tag "grad.png"%>
+              <h3><span>$</span>100</h3>
+              <p>Provides graduation certificates for all high school student employees</p>
+            </label>
+          </article>
+
+<button id="customButton2">Donate $100</button>
+
+<script>
+  var handler = StripeCheckout.configure({
+    key: 'pk_test_IT15WFqXvwQCvMqSQ7aFrKxX',
+    image: '/square-image.png',
+    token: function(token) {
+      // Use the token to create the charge with a server-side script.
+      // You can access the token ID with `token.id`
+    }
+  });
+
+
+  $('#customButton2').on('click', function(e) {
+    // Open Checkout with further options
+    handler.open({
+      name: 'Coaching4Change',
+      description: 'Graduation Certificates',
+      amount: 10000
+    });
+    e.preventDefault();
+  });
+
+  // Close Checkout on page navigation
+  $(window).on('popstate', function() {
+    handler.close();
+  });
+</script>
+</div>
+
+<div class="eight columns omega">
+  <article>
+    <label class="amount">
+      <h2>Student Salary (15 weeks)</h2>
+      <%= image_tag "coach.png"%>
+      <h3><span>$</span>200</h3>
+      <p>Provides a salary for 1 high school student employee for one semester</p>
+    </label>
+  </article>
+
+  <button id="customButton3">Donate $200</button>
+
+<script>
+  var handler = StripeCheckout.configure({
+    key: 'pk_test_IT15WFqXvwQCvMqSQ7aFrKxX',
+    image: '/square-image.png',
+    token: function(token) {
+      // Use the token to create the charge with a server-side script.
+      // You can access the token ID with `token.id`
+    }
+  });
+
+
+  $('#customButton3').on('click', function(e) {
+    // Open Checkout with further options
+    handler.open({
+      name: 'Coaching4Change',
+      description: 'Graduation Certificates',
+      amount: 20000
+    });
+    e.preventDefault();
+  });
+
+  // Close Checkout on page navigation
+  $(window).on('popstate', function() {
+    handler.close();
+  });
+</script>
+</div>
+<div class="eight columns alpha">
+ <article>
+    <label class="amount">
+      <h2>Field Trip</h2>
+      <%= image_tag "bus.png" %>
+      <h3><span>$</span>300</h3>
+      <p>Provides one college field trip for cohort of 15 high school student employees</p>
+    </label>
+  </article>
+
+  <button id="customButton4">Donate $300</button>
+
+<script>
+  var handler = StripeCheckout.configure({
+    key: 'pk_test_IT15WFqXvwQCvMqSQ7aFrKxX',
+    image: '/square-image.png',
+    token: function(token) {
+      // Use the token to create the charge with a server-side script.
+      // You can access the token ID with `token.id`
+    }
+  });
+
+
+  $('#customButton4').on('click', function(e) {
+    // Open Checkout with further options
+    handler.open({
+      name: 'Coaching4Change',
+      description: 'Graduation Certificates',
+      amount: 30000
+    });
+    e.preventDefault();
+  });
+
+  // Close Checkout on page navigation
+  $(window).on('popstate', function() {
+    handler.close();
+  });
+</script>
+</div>
+
+<div class="eight columns omega">
+ <article>
+    <label class="amount">
+
+       <h2>Student Salary (Full year)</h2>
+       <%=image_tag "coach.png" %>
+       <h3><span>$</span>400</h3>
+       <p>Provides Student Salary for the entire school year.</p>
+      
+    </label>
+  </article>
+  <button id="customButton4">Donate $400</button>
+
+<script>
+  var handler = StripeCheckout.configure({
+    key: 'pk_test_IT15WFqXvwQCvMqSQ7aFrKxX',
+    image: '/square-image.png',
+    token: function(token) {
+      // Use the token to create the charge with a server-side script.
+      // You can access the token ID with `token.id`
+    }
+  });
+
+
+  $('#customButton4').on('click', function(e) {
+    // Open Checkout with further options
+    handler.open({
+      name: 'Coaching4Change',
+      description: 'Student Salary (Full year)',
+      amount: 40000
+    });
+    e.preventDefault();
+  });
+
+  // Close Checkout on page navigation
+  $(window).on('popstate', function() {
+    handler.close();
+  });
+</script>
+
+</div>
+
+<div class="eight columns alpha">
+ <article>
+    <label class="amount">
+
+       <h2>Sports Equipment</h2>
+       <%=image_tag "bball.png" %>
+       <h3><span>$</span>500</h3>
+       <p>Provides sports equipment for program activities</p>
+      
+    </label>
+  </article>
+  <button id="customButton5">Donate $500</button>
+</div>
+
+<script>
+  var handler = StripeCheckout.configure({
+    key: 'pk_test_IT15WFqXvwQCvMqSQ7aFrKxX',
+    image: '/square-image.png',
+    token: function(token) {
+      // Use the token to create the charge with a server-side script.
+      // You can access the token ID with `token.id`
+    }
+  });
+
+
+  $('#customButton5').on('click', function(e) {
+    // Open Checkout with further options
+    handler.open({
+      name: 'Coaching4Change',
+      description: 'Sports Equipment',
+      amount: 50000
+    });
+    e.preventDefault();
+  });
+
+  // Close Checkout on page navigation
+  $(window).on('popstate', function() {
+    handler.close();
+  });
+</script>
+</div>
+<div class="eight columns omega">
+  <article>
+    <label class="amount">
+      <h2>Mentor Training</h2>
+      <%=image_tag "train.png"%>
+      <h3><span>$</span>1,000</h3>
+      <p>Provides training for all program mentors and teachers</p>
+    </label>
+  </article>
+  <button id="customButton6">Donate $1,000</button>
+
+<script>
+  var handler = StripeCheckout.configure({
+    key: 'pk_test_IT15WFqXvwQCvMqSQ7aFrKxX',
+    image: '/square-image.png',
+    token: function(token) {
+      // Use the token to create the charge with a server-side script.
+      // You can access the token ID with `token.id`
+    }
+  });
+
+
+  $('#customButton6').on('click', function(e) {
+    // Open Checkout with further options
+    handler.open({
+      name: 'Coaching4Change',
+      description: 'Mentor Training',
+      amount: 100000
+    });
+    e.preventDefault();
+  });
+
+  // Close Checkout on page navigation
+  $(window).on('popstate', function() {
+    handler.close();
+  });
+</script>
+</div>
+<div class="eight columns alpha">
+    <label class="amount">
+      <h2>Instructor Salary</h2>
+      <%= image_tag "teacher.png"%>
+      <h3><span>$</span>3,700</h3>
+      <p>Provides a salary for the program instructor</p>
+    </label>
+  </article>
+
+    <button id="customButton7">Donate $3,700</button>
+
+<script>
+  var handler = StripeCheckout.configure({
+    key: 'pk_test_IT15WFqXvwQCvMqSQ7aFrKxX',
+    image: '/square-image.png',
+    token: function(token) {
+      // Use the token to create the charge with a server-side script.
+      // You can access the token ID with `token.id`
+    }
+  });
+
+
+  $('#customButton7').on('click', function(e) {
+    // Open Checkout with further options
+    handler.open({
+      name: 'Coaching4Change',
+      description: 'Instructor Salary',
+      amount: 370000
+    });
+    e.preventDefault();
+  });
+
+  // Close Checkout on page navigation
+  $(window).on('popstate', function() {
+    handler.close();
+  });
+</script>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+(function () {
+    
+    // Create mobile element
+    var mobile = document.createElement('div');
+    mobile.className = 'nav-mobile';
+    document.querySelector('.nav').appendChild(mobile);
+
+    // hasClass
+    function hasClass(elem, className) {
+        return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+    }
+
+    // toggleClass
+    function toggleClass(elem, className) {
+        var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, ' ') + ' ';
+        if (hasClass(elem, className)) {
+            while (newClass.indexOf(' ' + className + ' ') >= 0) {
+                newClass = newClass.replace(' ' + className + ' ', ' ');
+            }
+            elem.className = newClass.replace(/^\s+|\s+$/g, '');
+        } else {
+            elem.className += ' ' + className;
+        }
+    }
+
+    // Mobile nav function
+    var mobileNav = document.querySelector('.nav-mobile');
+    var toggle = document.querySelector('.nav-list');
+    mobileNav.onclick = function () {
+        toggleClass(this, 'nav-mobile-open');
+        toggleClass(toggle, 'nav-active');
+    };
+})();
+</script>
+</body>
+</html>
+
+   
