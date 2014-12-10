@@ -136,6 +136,9 @@
   .nav-list {
     display:none;
   }
+
+  .nav-active{ display: block !important; }
+  
     #top {
         display:none;
     }
@@ -210,6 +213,9 @@
   .nav-list {
     display:none;
   }
+
+  .nav-active{ display: block !important; }
+
     #top {
         display:none;
     }
@@ -267,6 +273,8 @@
   .nav-list {
     display:none;
   }
+  .nav-active{ display: block !important; }
+
     #top {
         display:none;
     }
@@ -297,6 +305,9 @@
   .nav-list {
     display:none;
   }
+
+.nav-active{ display: block !important; }
+
     #top {
         display:none;
     }

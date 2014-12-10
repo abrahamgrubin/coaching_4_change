@@ -2285,7 +2285,12 @@ color:#13496C;
   text-align: center;
 }
 
+.nav-active li {
+    
+}
 
+#header .nav .nav-item.nav-hidden { display: none; }
+#header .nav .nav-active .nav-item.nav-hidden { display: block; }
 /*.pricebox header {
   background-color: #f1f1f1;
   -moz-box-shadow: 0 1px 3px rgba(0,0,0,.2);
